@@ -6,17 +6,17 @@ title: 博客主页
 heroImage: https://theme-hope-assets.vuejs.press/logo.svg
 heroText: 云泽的博客
 heroFullScreen: true
-tagline: 你可以在这里放置你的口号与标语
+tagline: 菜鸡的挣扎历程
 projects:
   - icon: project
-    name: 项目名称
-    desc: 项目详细描述
-    link: https://你的项目链接
+    name: 知识库
+    desc: 学习记录
+    link: https://gitee.com/cnyunze/knowledge.git
 
   - icon: link
-    name: 链接名称
-    desc: 链接详细描述
-    link: https://链接地址
+    name: 综合商城
+    desc: 商城项目案例仓库
+    link: https://gitee.com/cnyunze/yz-mall.git
 
   - icon: book
     name: 书籍名称
@@ -33,10 +33,10 @@ projects:
     desc: 伙伴详细介绍
     link: https://你的伙伴链接
 
-  - icon: https://theme-hope-assets.vuejs.press/logo.svg
-    name: 自定义项目
-    desc: 自定义详细介绍
-    link: https://你的自定义链接
+  - icon: link
+    name: 云梦泽
+    desc: 管理系统
+    link: https://3xj.club/#/login
 
 footer: 自定义你的页脚文字
 ---
