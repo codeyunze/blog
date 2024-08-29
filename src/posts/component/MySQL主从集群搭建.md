@@ -1,6 +1,7 @@
 ---
-icon: pen-to-square
+icon: fa-solid fa-database
 date: 2024-04-01
+author: 云泽
 category:
   - 数据库
 tag:
@@ -12,9 +13,7 @@ tag:
 
 ## 先安装单机版mysql数据库
 
-操作流程： [MySQL数据库安装](MySQL数据库安装.md) 
-
-
+操作流程： [MySQL数据库安装](MySQL数据库安装.md)
 
 ## 单机版改造为主从模式
 

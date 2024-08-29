@@ -13,7 +13,7 @@ export default hopeTheme({
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "https://yunze-gh.github.io/blog/logo.png?raw=true",
 
   repo: "yunze-gh/blog",
 
@@ -40,7 +40,7 @@ export default hopeTheme({
       GitHub: "https://github.com/yunze-gh",
       Wechat: "https://example.com",
       VuePressThemeHope: {
-        icon: "https://theme-hope-assets.vuejs.press/logo.svg",
+        icon: "https://yunze-gh.github.io/blog/logo.png?raw=true",
         link: "https://theme-hope.vuejs.press",
       },
     },
@@ -55,7 +55,7 @@ export default hopeTheme({
 
   // 多语言配置
   metaLocales: {
-    editLink: "在 GitHub 上编辑此页",
+    // editLink: "编辑此页",
   },
 
   // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
@@ -154,8 +154,8 @@ export default hopeTheme({
     //   cacheHTML: true,
     //   cacheImage: true,
     //   appendBase: true,
-    //   apple: {
-    //     icon: "/assets/icon/apple-icon-152.png",
+    //   component: {
+    //     icon: "/assets/icon/component-icon-152.png",
     //     statusBarColor: "black",
     //   },
     //   msTile: {

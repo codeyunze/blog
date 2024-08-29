@@ -2,11 +2,12 @@
 home: true
 layout: BlogHome
 icon: home
-title: 博客主页
+title: 云泽的博客
 heroImage: https://yunze-gh.github.io/blog/logo.png?raw=true
 heroText: 云泽的博客
 heroFullScreen: true
 tagline: 菜鸡的挣扎历程
+#bgImage: https://yunze-gh.github.io/blog/bg.png?raw=true
 projects:
   - icon: project
     name: 知识库
