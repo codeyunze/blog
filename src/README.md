@@ -18,22 +18,22 @@ projects:
     desc: 商城项目案例仓库
     link: https://gitee.com/cnyunze/yz-mall.git
 
-  - icon: book
-    name: 书籍名称
-    desc: 书籍详细描述
-    link: https://你的书籍链接
+  # - icon: book
+  #   name: 书籍名称
+  #   desc: 书籍详细描述
+  #   link: https://你的书籍链接
+
+  # - icon: article
+  #   name: 文章名称
+  #   desc: 文章详细描述
+  #   link: https://你的文章链接
+
+  # - icon: friend
+  #   name: 伙伴名称
+  #   desc: 伙伴详细介绍
+  #   link: https://你的伙伴链接
 
   - icon: article
-    name: 文章名称
-    desc: 文章详细描述
-    link: https://你的文章链接
-
-  - icon: friend
-    name: 伙伴名称
-    desc: 伙伴详细介绍
-    link: https://你的伙伴链接
-
-  - icon: link
     name: 云梦泽
     desc: 管理系统
     link: https://3xj.club/#/login

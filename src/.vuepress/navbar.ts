@@ -13,10 +13,11 @@ export default navbar([
         icon: "pen-to-square",
         prefix: "apple/",
         children: [
+          { text: "1-MySQL数据库安装", icon: "pen-to-square", link: "1-MySQL数据库安装" },
           { text: "苹果1", icon: "pen-to-square", link: "1" },
           { text: "苹果2", icon: "pen-to-square", link: "2" },
           "3",
-          "4",
+          { text: "2-MySQL主从集群搭建", icon: "pen-to-square", link: "2-MySQL主从集群搭建" },
         ],
       },
       {
