@@ -2,9 +2,8 @@
 icon: pen-to-square
 date: 2022-05-13
 category:
-  - MQ
-tag:
   - 消息队列
+tag:
   - RabbitMQ
   - MQ
 ---

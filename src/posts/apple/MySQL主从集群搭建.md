@@ -2,15 +2,17 @@
 icon: pen-to-square
 date: 2024-04-01
 category:
+  - 数据库
+tag:
   - MySQL
-  - 集群
+  - 主从集群
 ---
 
 # MySQL主从集群搭建
 
 ## 先安装单机版mysql数据库
 
-操作流程： [MySQL数据库安装.md](MySQL数据库安装.md) 
+操作流程： [MySQL数据库安装](MySQL数据库安装.md) 
 
 
 

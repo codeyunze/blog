@@ -2,7 +2,9 @@
 icon: pen-to-square
 date: 2024-04-01
 category:
-  - MySQL
+   - 数据库
+tag:
+   - MySQL
 ---
 
 # MySQL数据库安装
