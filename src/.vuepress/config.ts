@@ -1,5 +1,6 @@
 import { defineUserConfig } from "vuepress";
-import { searchProPlugin } from "vuepress-plugin-search-pro";
+// import { searchProPlugin } from "vuepress-plugin-search-pro";
+
 
 import theme from "./theme.js";
 
@@ -13,11 +14,11 @@ export default defineUserConfig({
   theme,
 
   plugins: [
-    searchProPlugin({
-      indexContent: true,
-      hotReload: true,
-    }),
-  ]
+    // searchProPlugin({
+    //   indexContent: true,
+    //   hotReload: true
+    // }),
+  ],
 
   // 和 PWA 一起启用
   // shouldPrefetch: false,

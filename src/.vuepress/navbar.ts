@@ -9,15 +9,14 @@ export default navbar([
     prefix: "/posts/",
     children: [
       {
-        text: "苹果",
+        text: "中间件安装部署",
         icon: "pen-to-square",
         prefix: "apple/",
         children: [
-          { text: "1-MySQL数据库安装", icon: "pen-to-square", link: "1-MySQL数据库安装" },
-          { text: "苹果1", icon: "pen-to-square", link: "1" },
+          { text: "MySQL数据库安装", icon: "pen-to-square", link: "MySQL数据库安装" },
+          { text: "RabbitMQ安装", icon: "pen-to-square", link: "RabbitMQ安装" },
+          { text: "MySQL主从集群搭建", icon: "pen-to-square", link: "MySQL主从集群搭建" },
           { text: "苹果2", icon: "pen-to-square", link: "2" },
-          "3",
-          { text: "2-MySQL主从集群搭建", icon: "pen-to-square", link: "2-MySQL主从集群搭建" },
         ],
       },
       {
@@ -34,9 +33,7 @@ export default navbar([
             text: "香蕉 2",
             icon: "pen-to-square",
             link: "2",
-          },
-          "3",
-          "4",
+          }
         ],
       },
       { text: "樱桃", icon: "pen-to-square", link: "cherry" },

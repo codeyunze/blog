@@ -3,7 +3,7 @@ home: true
 layout: BlogHome
 icon: home
 title: 博客主页
-heroImage: https://theme-hope-assets.vuejs.press/logo.svg
+heroImage: https://yunze-gh.github.io/blog/logo.png?raw=true
 heroText: 云泽的博客
 heroFullScreen: true
 tagline: 菜鸡的挣扎历程
