@@ -2,6 +2,8 @@
 icon: fa-solid fa-database
 date: 2024-04-01
 author: 云泽
+order: 10
+collapsible: 
 category:
   - 数据库
 tag:

@@ -112,7 +112,7 @@ export default hopeTheme({
       // 在启用之前安装 chart.js
       // chart: true,
 
-      // insert component easily
+      // insert database easily
 
       // 在启用之前安装 echarts
       // echarts: true,
@@ -154,8 +154,8 @@ export default hopeTheme({
     //   cacheHTML: true,
     //   cacheImage: true,
     //   appendBase: true,
-    //   component: {
-    //     icon: "/assets/icon/component-icon-152.png",
+    //   database: {
+    //     icon: "/assets/icon/database-icon-152.png",
     //     statusBarColor: "black",
     //   },
     //   msTile: {

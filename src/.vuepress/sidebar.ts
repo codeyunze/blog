@@ -11,6 +11,41 @@ export default sidebar({
       children: "structure",
     },
     {
+      text: "数据库",
+      icon: "fa-solid fa-database",
+      prefix: "database/",
+      link: "database/",
+      children: [
+          "MySQL数据库安装",
+          "MySQL主从集群搭建",
+          "Redis的单机安装步骤",
+          "Redis的哨兵架构配置",
+          "Redis的主从架构",
+          "Redis的集群搭建"
+      ],
+    },
+    {
+      text: "消息队列",
+      icon: "fa-solid fa-tower-broadcast",
+      prefix: "mq/",
+      link: "mq/",
+      children: [
+        "RabbitMQ安装",
+        "RabbitMQ的理解"
+      ],
+    },
+    {
+      text: "Git",
+      icon: "fa-solid fa-code-branch",
+      prefix: "git/",
+      link: "git/",
+      children: [
+        "Git常用命令",
+        "Git提交代码规范",
+        "修改历史版本代码方案"
+      ],
+    },
+    {
       text: "文章",
       icon: "book",
       prefix: "posts/",
