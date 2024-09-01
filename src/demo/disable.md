@@ -1,6 +1,7 @@
 ---
 title: 布局与功能禁用
 icon: gears
+date: 2022-01-01
 order: 4
 category:
   - 使用指南
