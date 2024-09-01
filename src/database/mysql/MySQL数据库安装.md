@@ -9,6 +9,10 @@ tag:
    - MySQL
 ---
 
+包含Linux和Windows两个版本MySQL数据库的详细安装步骤。
+
+<!-- more -->
+
 # MySQL数据库安装
 
 > 如果是云服务器，记得在安全组/防火墙里开放3306端口
@@ -27,7 +31,7 @@ tag:
 >
 > 然后下载RPM Bundle（rpm的所有安装包）
 
-![image-20240405125255724](images/image-20240405125255724.png)
+![image-20240405125255724](../images/image-20240405125255724.png)
 
 
 
@@ -39,11 +43,11 @@ tar -xvf mysql-8.0.36-1.el7.x86_64.rpm-bundle.tar
 
 
 
-![image-20240405130039529](images/image-20240405130039529.png)
+![image-20240405130039529](../images/image-20240405130039529.png)
 
 可删除用不到的包，保留6个有需要的包
 
-![image-20240405130327785](images/image-20240405130327785.png)
+![image-20240405130327785](../images/image-20240405130327785.png)
 
 ### 2. 检查环境
 
@@ -55,7 +59,7 @@ rpm -qa | grep libao
 
 检查是否有打印如下信息
 
-![image-20240405130636667](images/image-20240405130636667.png)
+![image-20240405130636667](../images/image-20240405130636667.png)
 
 如果没有打印，则需要执行如下命令去安装
 
@@ -63,7 +67,7 @@ rpm -qa | grep libao
 yum install libaio
 ```
 
-![image-20240405132613329](images/image-20240405132613329.png)
+![image-20240405132613329](../images/image-20240405132613329.png)
 
 
 
@@ -75,7 +79,7 @@ rpm -qa | grep net-tools
 
 检查是否有打印如下信息
 
-![image-20240405132735588](images/image-20240405132735588.png)
+![image-20240405132735588](../images/image-20240405132735588.png)
 
 如果没有打印，则需执行如下命令
 
@@ -93,7 +97,7 @@ yum install net-tools
    rpm -ivh mysql-community-common-8.0.36-1.el7.x86_64.rpm
    ```
 
-   效果：![image-20240405133100212](images/image-20240405133100212.png)
+   效果：![image-20240405133100212](../images/image-20240405133100212.png)
 
 #### 2. mysql-community-client-plugins
 
@@ -105,7 +109,7 @@ yum install net-tools
 
    效果：
 
-![image-20240405133358713](images/image-20240405133358713.png)
+![image-20240405133358713](../images/image-20240405133358713.png)
 
 #### 3. mysql-community-libs
 
@@ -117,7 +121,7 @@ yum install net-tools
 
    可能会报错：
 
-![image-20240405133532194](images/image-20240405133532194.png)
+![image-20240405133532194](../images/image-20240405133532194.png)
 
    需要执行如下命令来移除系统自带的依赖：
 
@@ -127,7 +131,7 @@ yum install net-tools
 
    效果如下：
 
-![image-20240405133714953](images/image-20240405133714953.png)
+![image-20240405133714953](../images/image-20240405133714953.png)
 
    然后重新执行rpm包安装命令
 
@@ -137,7 +141,7 @@ yum install net-tools
 
    效果：
 
-![image-20240405133809022](images/image-20240405133809022.png)
+![image-20240405133809022](../images/image-20240405133809022.png)
 
 #### 4. mysql-community-client
 
@@ -149,7 +153,7 @@ yum install net-tools
 
    效果：
 
-![image-20240405133936898](images/image-20240405133936898.png)
+![image-20240405133936898](../images/image-20240405133936898.png)
 
 #### 5. mysql-community-icu-data-files
 
@@ -161,7 +165,7 @@ rpm -ivh mysql-community-icu-data-files-8.0.36-1.el7.x86_64.rpm
 
 效果：
 
-![image-20240405134642110](images/image-20240405134642110.png)
+![image-20240405134642110](../images/image-20240405134642110.png)
 
 #### 6. mysql-community-server
 
@@ -173,7 +177,7 @@ rpm -ivh mysql-community-server-8.0.36-1.el7.x86_64.rpm
 
 效果：
 
-![image-20240405134919854](images/image-20240405134919854.png)
+![image-20240405134919854](../images/image-20240405134919854.png)
 
 ### 4. 检查是否安装成功
 
@@ -186,7 +190,7 @@ rpm -ivh mysql-community-server-8.0.36-1.el7.x86_64.rpm
 
 
 
-![image-20240405135132161](images/image-20240405135132161.png)
+![image-20240405135132161](../images/image-20240405135132161.png)
 
 
 
@@ -208,7 +212,7 @@ rpm -ivh mysql-community-server-8.0.36-1.el7.x86_64.rpm
 
 
 
-![image-20240405135434650](images/image-20240405135434650.png)
+![image-20240405135434650](../images/image-20240405135434650.png)
 
 从日志里可以看到随机密码为 `fc2T*yPe>dH=`
 
@@ -224,7 +228,7 @@ systemctl start mysqld
 
 可能出现如下异常
 
-![image-20240405140031204](images/image-20240405140031204.png)
+![image-20240405140031204](../images/image-20240405140031204.png)
 
 按照他的提示去执行命令，看看服务状态
 
@@ -240,7 +244,7 @@ cat /var/log/mysqld.log
 
 发现 /var/lib/mysql 目录下创建文件 auto.cnf 失败
 
-![image-20240405135921489](images/image-20240405135921489.png)
+![image-20240405135921489](../images/image-20240405135921489.png)
 
 解决方案，给 /var/lib/mysql 目录加权限
 
@@ -262,7 +266,7 @@ systemctl start mysqld
   systemctl status mysqld
 ```
 
-![image-20240405140704497](images/image-20240405140704497.png)
+![image-20240405140704497](../images/image-20240405140704497.png)
 
 状态为 `active (running)` 则代表mysql服务启动成功
 
@@ -274,7 +278,7 @@ systemctl start mysqld
 mysql -u root -p
    ```
 
-   ![image-20240405145817383](images/image-20240405145817383.png)
+   ![image-20240405145817383](../images/image-20240405145817383.png)
 
    
 
@@ -329,7 +333,7 @@ Query OK, 0 rows affected (0.01 sec)
 
 2. 可以使用 `locate my.cnf` 命令查询mysql的配置文件 `my.cnf`的地址
 
-   ![image-20240405150905848](images/image-20240405150905848.png)
+   ![image-20240405150905848](../images/image-20240405150905848.png)
 
    如果提示locate命令不存在，则可执行如下命令安装 `locate` 之后再去查询 `my.cnf` 配置文件的地址
 
@@ -352,7 +356,7 @@ Query OK, 0 rows affected (0.01 sec)
    mysql --help | grep 'my.cnf'
    ```
 
-   ![image-20240405151518184](images/image-20240405151518184.png)
+   ![image-20240405151518184](../images/image-20240405151518184.png)
 
    会优先读取 `/etc/my.cnf` 配置文件
 
