@@ -2,7 +2,6 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/",
-  // "/demo/",
   {
     text: "数据库",
     icon: "fa-solid fa-database",
@@ -31,32 +30,13 @@ export default navbar([
     ],
   },
   {
-    text: "博文",
-    icon: "fa-solid fa-book",
-    prefix: "/posts/",
+    text: "Git",
+    icon: "fa-solid fa-code-branch",
+    prefix: "/git/",
     children: [
-      /*{
-        text: "消息队列",
-        icon: "fa-solid fa-toolbox",
-        prefix: "mq/",
-        children: [
-          {text: "RabbitMQ安装", icon: "fa-solid fa-tower-broadcast", link: "RabbitMQ安装"},
-          {text: "RabbitMQ的理解", icon: "fa-solid fa-tower-broadcast", link: "RabbitMQ的理解"},
-        ],
-      },
-      {
-        text: "Git",
-        icon: "pen-to-square",
-        prefix: "git/",
-        children: [
-          {
-            text: "Git常用命令",
-            icon: "pen-to-square",
-            link: "Git常用命令",
-          }
-        ],
-      },*/
-      { text: "樱桃", icon: "pen-to-square", link: "cherry" },
+      {text: "Git常用命令", icon: "fa-solid fa-code-branch", link: "Git常用命令"},
+      {text: "Git提交代码规范", icon: "fa-solid fa-code-branch", link: "Git提交代码规范"},
+      {text: "修改历史版本代码方案", icon: "fa-solid fa-code-branch", link: "修改历史版本代码方案"},
     ],
   },
   /*{

@@ -11,7 +11,7 @@ export default defineUserConfig({
 
   lang: "zh-CN",
   title: "云泽的博客",
-  description: "菜鸡的挣扎历程",
+  description: "未来的变数太多，而我所能做的，就是走好当下这一步。",
 
   theme,
 
