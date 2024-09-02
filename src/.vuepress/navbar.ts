@@ -30,6 +30,15 @@ export default navbar([
     ],
   },
   {
+    text: "消息队列",
+    icon: "fa-solid fa-tower-cell",
+    prefix: "/mq/",
+    children: [
+      {text: "RabbitMQ安装", icon: "fa-solid fa-tower-broadcast", link: "RabbitMQ安装"},
+      {text: "RabbitMQ的理解", icon: "fa-solid fa-tower-broadcast", link: "RabbitMQ的理解"},
+    ],
+  },
+  {
     text: "Git",
     icon: "fa-solid fa-code-branch",
     prefix: "/git/",
@@ -39,9 +48,9 @@ export default navbar([
       {text: "修改历史版本代码方案", icon: "fa-solid fa-code-branch", link: "修改历史版本代码方案"},
     ],
   },
-  /*{
-    text: "V2 文档",
+  {
+    text: "云梦泽",
     icon: "book",
-    link: "https://theme-hope.vuejs.press/zh/",
-  },*/
+    link: "https://3xj.club/#/login",
+  },
 ]);

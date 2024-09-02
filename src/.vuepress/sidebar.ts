@@ -22,7 +22,7 @@ export default sidebar({
     },
     {
       text: "消息队列",
-      icon: "fa-solid fa-tower-broadcast",
+      icon: "fa-solid fa-tower-cell",
       prefix: "mq/",
       link: "mq/",
       collapsible: true,
@@ -48,6 +48,12 @@ export default sidebar({
       icon: "fa-solid fa-toolbox",
       prefix: "maintenance/",
       collapsible: true,
+      children: "structure",
+    },
+    {
+      text: "其他",
+      icon: "fa-brands fa-creative-commons",
+      prefix: "other/",
       children: "structure",
     },
     /*{
