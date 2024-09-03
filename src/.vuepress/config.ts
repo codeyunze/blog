@@ -1,9 +1,11 @@
 import { defineUserConfig } from "vuepress";
 import { getDirname, path } from "vuepress/utils";
+import { commentPlugin } from "@vuepress/plugin-comment";
 // import { searchProPlugin } from "vuepress-plugin-search-pro";
 
 
 import theme from "./theme.js";
+import {comment} from "vuepress-theme-hope";
 const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
@@ -27,6 +29,17 @@ export default defineUserConfig({
     //   indexContent: true,
     //   hotReload: true
     // }),
+      commentPlugin({
+        provider: 'Giscus',
+        repo: "yunze-gh/blog",
+        repoId: "R_kgDOMo44_A",
+        category: "General",
+        categoryId: "DIC_kwDOMo44_M4CiKOl",
+        mapping: "title",
+        strict: false,
+        reactionsEnabled: true,
+        inputPosition: "top"
+      })
   ],
 
 
