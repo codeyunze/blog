@@ -30,6 +30,14 @@ export default navbar([
     ],
   },
   {
+    text: "Spring",
+    icon: "fa-solid fa-leaf",
+    prefix: "/spring/",
+    children: [
+      {text: "Spring常见面试题", icon: "fa-solid fa-leaf", link: "Spring常见面试题"}
+    ],
+  },
+  {
     text: "消息队列",
     icon: "fa-solid fa-tower-cell",
     prefix: "/mq/",
