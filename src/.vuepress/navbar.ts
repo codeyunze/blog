@@ -30,11 +30,12 @@ export default navbar([
     ],
   },
   {
-    text: "Spring",
-    icon: "fa-solid fa-leaf",
-    prefix: "/spring/",
+    text: "面试",
+    icon: "fa-solid fa-clipboard-question",
+    prefix: "/interview/",
     children: [
-      {text: "Spring常见面试题", icon: "fa-solid fa-leaf", link: "Spring常见面试题"}
+      {text: "Spring常见面试题", icon: "fa-solid fa-leaf", link: "Spring常见面试题"},
+      {text: "MySQL常见面试题", icon: "fa-solid fa-leaf", link: "MySQL常见面试题"}
     ],
   },
   {
@@ -57,8 +58,42 @@ export default navbar([
     ],
   },
   {
-    text: "云梦泽",
-    icon: "book",
-    link: "https://3xj.club/#/login",
+    text: "其他",
+    icon: "fa-brands fa-creative-commons",
+    prefix: "other/",
+    children: [
+      {
+        text: "数据结构",
+        icon: "fa-solid fa-code-branch",
+        prefix: "structure/",
+        children: [
+          {text: "平衡二叉树", icon: "fa-brands fa-sourcetree", link: "平衡二叉树"},
+        ],
+      },
+      {
+        text: "杂项",
+        icon: "fa-brands fa-creative-commons",
+        prefix: "/",
+        children: [
+          {text: "常见术语", icon: "fa-brands fa-creative-commons", link: "常见术语"},
+        ],
+      },
+    ],
+  },
+  {
+    text: "跳转",
+    icon: "fa-solid fa-arrow-up-right-from-square",
+    children: [
+      {
+        text: "Spring",
+        icon: "fa-solid fa-leaf",
+        link: "https://spring.io/"
+      },
+      {
+        text: "云梦泽",
+        icon: "fa-solid fa-link",
+        link: "https://3xj.club/#/login",
+      },
+    ],
   },
 ]);
