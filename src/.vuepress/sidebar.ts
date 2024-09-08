@@ -53,6 +53,10 @@ export default sidebar({
     {
       text: "其他",
       icon: "fa-brands fa-creative-commons",
+      // 可选的, 设置分组是否可以折叠，默认值是 false,
+      collapsible: true,
+      // 可选的。设置分组是否默认展开，默认值是 false
+      expanded: true,
       prefix: "other/",
       children: "structure",
     },
