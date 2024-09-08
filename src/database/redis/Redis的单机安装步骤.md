@@ -1,5 +1,5 @@
 ---
-icon: fa-solid fa-server
+icon: fa-solid fa-registered
 date: 2022-01-03
 order: 20
 category:

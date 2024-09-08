@@ -3,6 +3,16 @@ import { navbar } from "vuepress-theme-hope";
 export default navbar([
   "/",
   {
+    text: "面试",
+    icon: "fa-solid fa-clipboard-question",
+    prefix: "/interview/",
+    children: [
+      {text: "Spring常见面试题", icon: "fa-solid fa-leaf", link: "Spring常见面试题"},
+      {text: "MySQL常见面试题", icon: "fa-solid fa-leaf", link: "MySQL常见面试题"},
+      {text: "为何MySQL选择B+树作为索引结构", icon: "fa-solid fa-leaf", link: "为何MySQL选择B+树作为索引结构"}
+    ],
+  },
+  {
     text: "数据库",
     icon: "fa-solid fa-database",
     prefix: "database/",
@@ -21,24 +31,15 @@ export default navbar([
         icon: "fa-solid fa-server",
         prefix: "redis/",
         children: [
-          {text: "Redis的单机安装步骤", icon: "fa-solid fa-server", link: "Redis的单机安装步骤"},
-          {text: "Redis的哨兵架构配置", icon: "fa-solid fa-server", link: "Redis的哨兵架构配置"},
-          {text: "Redis的主从架构", icon: "fa-solid fa-server", link: "Redis的主从架构"},
-          {text: "Redis的集群搭建", icon: "fa-solid fa-server", link: "Redis的集群搭建"},
+          {text: "Redis的单机安装步骤", icon: "fa-solid fa-registered", link: "Redis的单机安装步骤"},
+          {text: "Redis的哨兵架构配置", icon: "fa-solid fa-registered", link: "Redis的哨兵架构配置"},
+          {text: "Redis的主从架构", icon: "fa-solid fa-registered", link: "Redis的主从架构"},
+          {text: "Redis的集群搭建", icon: "fa-solid fa-registered", link: "Redis的集群搭建"},
         ],
       },
     ],
   },
-  {
-    text: "面试",
-    icon: "fa-solid fa-clipboard-question",
-    prefix: "/interview/",
-    children: [
-      {text: "Spring常见面试题", icon: "fa-solid fa-leaf", link: "Spring常见面试题"},
-      {text: "MySQL常见面试题", icon: "fa-solid fa-leaf", link: "MySQL常见面试题"}
-    ],
-  },
-  {
+  /*{
     text: "消息队列",
     icon: "fa-solid fa-tower-cell",
     prefix: "/mq/",
@@ -46,7 +47,7 @@ export default navbar([
       {text: "RabbitMQ安装", icon: "fa-solid fa-tower-broadcast", link: "RabbitMQ安装"},
       {text: "RabbitMQ的理解", icon: "fa-solid fa-tower-broadcast", link: "RabbitMQ的理解"},
     ],
-  },
+  },*/
   {
     text: "Git",
     icon: "fa-solid fa-code-branch",
@@ -64,10 +65,11 @@ export default navbar([
     children: [
       {
         text: "数据结构",
-        icon: "fa-solid fa-code-branch",
+        icon: "fa-solid fa-folder-tree",
         prefix: "structure/",
         children: [
           {text: "平衡二叉树", icon: "fa-brands fa-sourcetree", link: "平衡二叉树"},
+          {text: "红黑树", icon: "fa-brands fa-sourcetree", link: "红黑树"},
         ],
       },
       {

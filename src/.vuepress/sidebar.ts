@@ -4,6 +4,15 @@ export default sidebar({
   "/": [
     "",
     {
+      text: "面试",
+      icon: "fa-solid fa-clipboard-question",
+      prefix: "interview/",
+      link: "interview/",
+      // 折叠
+      collapsible: true,
+      children: "structure",
+    },
+    {
       text: "数据库",
       icon: "fa-solid fa-database",
       prefix: "database/",
