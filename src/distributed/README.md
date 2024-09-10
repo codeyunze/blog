@@ -1,5 +1,5 @@
 ---
-title: 微服务
+title: 分布式
 icon: fa-solid fa-network-wired
 date: 2024-09-08
 dir:
@@ -8,8 +8,6 @@ dir:
 index: false
 ---
 
-# 微服务
+# 分布式
 
-微服务相关信息
-
-nacos、gateway、sentinel、seata、OAuth2、Skywalking
+ShardingJDBC分库分表、RabbitMQ、RocketMQ、Kafka、Elasticsearch、Netty、

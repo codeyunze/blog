@@ -55,7 +55,7 @@ export default navbar([
     children: [
       {text: "Git常用命令", icon: "fa-solid fa-code-branch", link: "Git常用命令"},
       {text: "Git提交代码规范", icon: "fa-solid fa-code-branch", link: "Git提交代码规范"},
-      {text: "修改历史版本代码方案", icon: "fa-solid fa-code-branch", link: "修改历史版本代码方案"},
+      {text: "修改历史版本代码方案", icon: "fa-solid fa-code-compare", link: "修改历史版本代码方案"},
     ],
   },
   {
@@ -65,7 +65,7 @@ export default navbar([
     children: [
       {
         text: "数据结构",
-        icon: "fa-solid fa-folder-tree",
+        icon: "fa-solid fa-network-wired",
         prefix: "structure/",
         children: [
           {text: "平衡二叉树", icon: "fa-brands fa-sourcetree", link: "平衡二叉树"},
@@ -73,11 +73,11 @@ export default navbar([
         ],
       },
       {
-        text: "杂项",
+        text: "其他",
         icon: "fa-brands fa-creative-commons",
         prefix: "/",
         children: [
-          {text: "常见术语", icon: "fa-brands fa-creative-commons", link: "常见术语"},
+          {text: "常见术语", icon: "fa-regular fa-comment", link: "常见术语"},
         ],
       },
     ],
