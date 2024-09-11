@@ -24,6 +24,8 @@ export default navbar([
         children: [
           {text: "MySQL数据库安装", icon: "fa-solid fa-database", link: "MySQL数据库安装"},
           {text: "MySQL主从集群搭建", icon: "fa-solid fa-database", link: "MySQL主从集群搭建"},
+          {text: "MySQL有哪些锁", icon: "fa-solid fa-lock", link: "MySQL有哪些锁"},
+          {text: "MySQL的意向锁", icon: "fa-solid fa-user-lock", link: "MySQL的意向锁"},
         ],
       },
       {

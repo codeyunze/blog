@@ -12,7 +12,7 @@ export default hopeTheme({
   },
 
   // 关键词: "iconify", "fontawesome", "fontawesome-with-brands"
-  iconAssets: "fontawesome",
+  iconAssets: "fontawesome-with-brands",
 
   logo: "/assets/images/logo.png",
 
