@@ -9,7 +9,6 @@ export default navbar([
     children: [
       {text: "Spring常见面试题", icon: "fa-solid fa-leaf", link: "Spring常见面试题"},
       {text: "MySQL常见面试题", icon: "fa-solid fa-leaf", link: "MySQL常见面试题"},
-      {text: "为何MySQL选择B+树作为索引结构", icon: "fa-solid fa-leaf", link: "为何MySQL选择B+树作为索引结构"}
     ],
   },
   {
@@ -24,6 +23,7 @@ export default navbar([
         children: [
           {text: "MySQL数据库安装", icon: "fa-solid fa-database", link: "MySQL数据库安装"},
           {text: "MySQL主从集群搭建", icon: "fa-solid fa-database", link: "MySQL主从集群搭建"},
+          {text: "为何MySQL选择B+树作为索引结构", icon: "fa-solid fa-leaf", link: "为何MySQL选择B+树作为索引结构"},
           {text: "MySQL有哪些锁", icon: "fa-solid fa-lock", link: "MySQL有哪些锁"},
           {text: "MySQL的意向锁", icon: "fa-solid fa-user-lock", link: "MySQL的意向锁"},
         ],
@@ -77,9 +77,9 @@ export default navbar([
       {
         text: "其他",
         icon: "fa-brands fa-creative-commons",
-        prefix: "/",
+        prefix: "common/",
         children: [
-          {text: "常见术语", icon: "fa-regular fa-comment", link: "常见术语"},
+          {text: "常见术语", icon: "fa-solid fa-comment", link: "常见术语"},
         ],
       },
     ],

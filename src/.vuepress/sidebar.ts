@@ -10,6 +10,8 @@ export default sidebar({
       link: "interview/",
       // 折叠
       collapsible: true,
+      // 可选的。设置分组是否默认展开，默认值是 false
+      expanded: true,
       children: "structure",
     },
     {
