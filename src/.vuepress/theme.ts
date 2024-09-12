@@ -11,6 +11,7 @@ export default hopeTheme({
     url: "https://yunze-gh.github.io",
   },
 
+  // 关键词: "iconify", "fontawesome", "fontawesome-with-brands"
   iconAssets: "fontawesome-with-brands",
 
   logo: "/assets/images/logo.png",

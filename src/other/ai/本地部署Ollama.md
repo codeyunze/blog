@@ -1,5 +1,5 @@
 ---
-icon: fa-solid fa-leaf
+icon: fa-regular fa-microchip-ai
 date: 2024-09-08
 order: 10
 categories:

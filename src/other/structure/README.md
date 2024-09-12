@@ -1,6 +1,6 @@
 ---
 title: 数据结构
-icon: fa-solid fa-folder-tree
+icon: fa-solid fa-network-wired
 date: 2024-09-08
 dir:
 	collapsible: false

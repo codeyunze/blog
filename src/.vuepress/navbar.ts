@@ -9,7 +9,6 @@ export default navbar([
     children: [
       {text: "Spring常见面试题", icon: "fa-solid fa-leaf", link: "Spring常见面试题"},
       {text: "MySQL常见面试题", icon: "fa-solid fa-leaf", link: "MySQL常见面试题"},
-      {text: "为何MySQL选择B+树作为索引结构", icon: "fa-solid fa-leaf", link: "为何MySQL选择B+树作为索引结构"}
     ],
   },
   {
@@ -24,6 +23,9 @@ export default navbar([
         children: [
           {text: "MySQL数据库安装", icon: "fa-solid fa-database", link: "MySQL数据库安装"},
           {text: "MySQL主从集群搭建", icon: "fa-solid fa-database", link: "MySQL主从集群搭建"},
+          {text: "为何MySQL选择B+树作为索引结构", icon: "fa-solid fa-leaf", link: "为何MySQL选择B+树作为索引结构"},
+          {text: "MySQL有哪些锁", icon: "fa-solid fa-lock", link: "MySQL有哪些锁"},
+          {text: "MySQL的意向锁", icon: "fa-solid fa-user-lock", link: "MySQL的意向锁"},
         ],
       },
       {
@@ -55,7 +57,7 @@ export default navbar([
     children: [
       {text: "Git常用命令", icon: "fa-solid fa-code-branch", link: "Git常用命令"},
       {text: "Git提交代码规范", icon: "fa-solid fa-code-branch", link: "Git提交代码规范"},
-      {text: "修改历史版本代码方案", icon: "fa-solid fa-code-branch", link: "修改历史版本代码方案"},
+      {text: "修改历史版本代码方案", icon: "fa-solid fa-code-compare", link: "修改历史版本代码方案"},
     ],
   },
   {
@@ -65,7 +67,7 @@ export default navbar([
     children: [
       {
         text: "数据结构",
-        icon: "fa-solid fa-folder-tree",
+        icon: "fa-solid fa-network-wired",
         prefix: "structure/",
         children: [
           {text: "平衡二叉树", icon: "fa-brands fa-sourcetree", link: "平衡二叉树"},
@@ -73,11 +75,11 @@ export default navbar([
         ],
       },
       {
-        text: "杂项",
+        text: "其他",
         icon: "fa-brands fa-creative-commons",
-        prefix: "/",
+        prefix: "common/",
         children: [
-          {text: "常见术语", icon: "fa-brands fa-creative-commons", link: "常见术语"},
+          {text: "常见术语", icon: "fa-solid fa-comment", link: "常见术语"},
         ],
       },
     ],
