@@ -4,7 +4,7 @@ icon: fa-solid fa-network-wired
 date: 2024-09-08
 dir:
 	collapsible: false
-	link: true
+	link: false
 index: false
 ---
 

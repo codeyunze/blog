@@ -130,7 +130,7 @@ select * from tablename where a = 3 for update;
 
 
 
-## 3.4 加锁方式
+## 4、加锁方式
 
 查询语句加共享锁
 

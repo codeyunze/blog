@@ -1,10 +1,10 @@
 ---
 title: 分布式
-icon: fa-solid fa-network-wired
+icon: fa-solid fa-layer-group
 date: 2024-09-08
 dir:
   collapsible: false
-  link: true
+  link: false
 index: false
 ---
 

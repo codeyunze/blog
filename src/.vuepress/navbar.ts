@@ -50,6 +50,12 @@ export default navbar([
       {text: "RabbitMQ的理解", icon: "fa-solid fa-tower-broadcast", link: "RabbitMQ的理解"},
     ],
   },*/
+  /*{
+    text: "分布式篇",
+    icon: "fa-solid fa-code-branch",
+    prefix: "/distributed/",
+    children: "structure",
+  },*/
   {
     text: "Git",
     icon: "fa-solid fa-code-branch",

@@ -4,7 +4,7 @@ export default sidebar({
   "/": [
     "",
     {
-      text: "面试",
+      text: "面试篇",
       icon: "fa-solid fa-clipboard-question",
       prefix: "interview/",
       link: "interview/",
@@ -15,23 +15,25 @@ export default sidebar({
       children: "structure",
     },
     {
-      text: "数据库",
+      text: "数据库篇",
       icon: "fa-solid fa-database",
       prefix: "database/",
       link: "database/",
       // 折叠
       collapsible: true,
-      children: "structure",
-      /*children: [
-          "MySQL数据库安装",
-          "MySQL主从集群搭建",
-          "Redis的单机安装步骤",
-          "Redis的哨兵架构配置",
-          "Redis的主从架构",
-          "Redis的集群搭建"
-      ],*/
+      children: "structure"
     },
     {
+      text: "分布式篇",
+      icon: "fa-solid fa-database",
+      // icon: "fa-thin fa-chart-network",
+      prefix: "distributed/",
+      link: "distributed/",
+      // 折叠
+      collapsible: true,
+      children: "structure"
+    },
+    /*{
       text: "消息队列",
       icon: "fa-solid fa-tower-cell",
       prefix: "mq/",
@@ -41,9 +43,9 @@ export default sidebar({
         "RabbitMQ安装",
         "RabbitMQ的理解"
       ],
-    },
+    },*/
     {
-      text: "Git",
+      text: "Git篇",
       icon: "fa-solid fa-code-branch",
       prefix: "git/",
       link: "git/",
@@ -55,7 +57,7 @@ export default sidebar({
       ],
     },
     {
-      text: "运维",
+      text: "运维篇",
       icon: "fa-solid fa-toolbox",
       prefix: "maintenance/",
       collapsible: true,
