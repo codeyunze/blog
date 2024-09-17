@@ -1,5 +1,5 @@
 ---
-icon: fa-solid fa-database
+icon: fa-solid fa-file-lines
 date: 2024-04-01
 author: 云泽
 order: 1
@@ -7,6 +7,7 @@ category:
    - 数据库
 tag:
    - MySQL
+   - 安装部署手册
 ---
 
 包含Linux和Windows两个版本MySQL数据库的详细安装步骤。
