@@ -1,5 +1,5 @@
 ---
-icon: fa-solid fa-registered
+icon: fa-solid fa-file-lines
 date: 2022-01-03
 order: 20
 category:
@@ -8,6 +8,7 @@ tag:
   - Redis
   - NoSQL
   - 缓存
+  - 安装部署手册
 ---
 
 Redis是一个高性能的键值（key-value）存储系统，是跨平台的非关系型数据库。

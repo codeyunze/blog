@@ -21,7 +21,7 @@ export default navbar([
         icon: "fa-solid fa-database",
         prefix: "mysql/",
         children: [
-          {text: "MySQL数据库安装", icon: "fa-solid fa-database", link: "MySQL数据库安装"},
+          {text: "MySQL数据库安装", icon: "fa-solid fa-file-lines", link: "MySQL数据库安装"},
           {text: "MySQL主从集群搭建", icon: "fa-solid fa-database", link: "MySQL主从集群搭建"},
           {text: "为何MySQL选择B+树作为索引结构", icon: "fa-solid fa-leaf", link: "为何MySQL选择B+树作为索引结构"},
           {text: "MySQL有哪些锁", icon: "fa-solid fa-lock", link: "MySQL有哪些锁"},
@@ -35,7 +35,7 @@ export default navbar([
         icon: "fa-solid fa-server",
         prefix: "redis/",
         children: [
-          {text: "Redis的单机安装步骤", icon: "fa-solid fa-registered", link: "Redis的单机安装步骤"},
+          {text: "Redis的单机安装步骤", icon: "fa-solid fa-file-lines", link: "Redis的单机安装步骤"},
           {text: "Redis的哨兵架构配置", icon: "fa-solid fa-registered", link: "Redis的哨兵架构配置"},
           {text: "Redis的主从架构", icon: "fa-solid fa-registered", link: "Redis的主从架构"},
           {text: "Redis的集群搭建", icon: "fa-solid fa-registered", link: "Redis的集群搭建"},
@@ -52,12 +52,39 @@ export default navbar([
       {text: "RabbitMQ的理解", icon: "fa-solid fa-tower-broadcast", link: "RabbitMQ的理解"},
     ],
   },*/
-  /*{
+  {
     text: "分布式篇",
     icon: "fa-solid fa-code-branch",
     prefix: "/distributed/",
-    children: "structure",
-  },*/
+    children: [
+      {
+        text: "搜索引擎",
+        icon: "fa-solid fa-magnifying-glass",
+        prefix: "es/",
+        children: [
+          {text: "Elasticsearch安装部署", icon: "fa-brands fa-searchengin", link: "Elasticsearch安装部署"},
+        ],
+      },
+      {
+        text: "消息队列",
+        icon: "fa-solid fa-xmarks-lines",
+        prefix: "mq/",
+        children: [
+          {text: "RabbitMQ安装", icon: "fa-solid fa-file-lines", link: "RabbitMQ安装"},
+          {text: "RabbitMQ的理解", icon: "fa-solid fa-tower-broadcast", link: "RabbitMQ的理解"},
+        ],
+      },
+      {
+        text: "分布式事务",
+        icon: "fa-solid fa-network-wired",
+        prefix: "seate/",
+        children: [
+          {text: "Seata二阶段提交机制", link: "Seata分布式事务二阶段提交机制全面解读"},
+          {text: "Seata部署与项目集成", link: "手把手教你部署与项目集成Seata"},
+        ],
+      },
+    ],
+  },
   {
     text: "Git",
     icon: "fa-solid fa-code-branch",
