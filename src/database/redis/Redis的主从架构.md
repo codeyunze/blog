@@ -1,5 +1,5 @@
 ---
-icon: fa-solid fa-registered
+icon: fa-solid fa-share-nodes
 date: 2022-01-04
 order: 30
 category:

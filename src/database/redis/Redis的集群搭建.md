@@ -1,5 +1,5 @@
 ---
-icon: fa-solid fa-registered
+icon: fa-solid fa-circle-nodes
 date: 2022-01-06
 order: 50
 category:

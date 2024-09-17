@@ -26,6 +26,8 @@ export default navbar([
           {text: "为何MySQL选择B+树作为索引结构", icon: "fa-solid fa-leaf", link: "为何MySQL选择B+树作为索引结构"},
           {text: "MySQL有哪些锁", icon: "fa-solid fa-lock", link: "MySQL有哪些锁"},
           {text: "MySQL的意向锁", icon: "fa-solid fa-user-lock", link: "MySQL的意向锁"},
+          {text: "数据库事务中的四大问题：脏读、脏写、不可重复读与幻读详解", icon: "fa-solid fa-shuffle", link: "数据库事务中的四大问题：脏读、脏写、不可重复读与幻读详解"},
+          {text: "MVCC机制解析：提升数据库并发性能的关键", icon: "fa-solid fa-people-arrows", link: "MVCC机制解析：提升数据库并发性能的关键"},
         ],
       },
       {

@@ -1,0 +1,46 @@
+<mxfile host="65bd71144e">
+    <diagram id="hIcnjdIaA8D7SygutMs-" name="第 1 页">
+        <mxGraphModel dx="850" dy="602" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;第一部分&lt;br&gt;已经提交的事务&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="39" y="220" width="250" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;第二部分&lt;br&gt;还未提交事务&lt;br&gt;与事务id最大的事务&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="289" y="220" width="250" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;第三部分&lt;br&gt;还未开始的事务&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="539" y="220" width="250" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="min_id=1002" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="170" width="111" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="max_id=1004" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="470" y="170" width="121" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="小于1002区间" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="79" y="310" width="170" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;fontSize=18;direction=north;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="290" width="249" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;fontSize=18;direction=north;" vertex="1" parent="1">
+                    <mxGeometry x="289" y="290" width="250" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;fontSize=18;direction=north;" vertex="1" parent="1">
+                    <mxGeometry x="539" y="290" width="250" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="大于1004区间" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="579" y="310" width="170" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="大于等于1002且&lt;br&gt;小于等于1004区间" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="329" y="310" width="170" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="shape=crossbar;whiteSpace=wrap;html=1;rounded=1;direction=west;fontSize=18;dashed=1;" vertex="1" parent="1">
+                    <mxGeometry x="289" y="200" width="250" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

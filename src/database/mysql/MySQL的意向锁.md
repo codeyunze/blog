@@ -3,7 +3,7 @@ icon: fa-solid fa-user-lock
 title: MySQL的意向锁
 date: 2024-09-10
 author: 云泽
-order: 10
+order: 25
 category:
    - 数据库
 tag:
