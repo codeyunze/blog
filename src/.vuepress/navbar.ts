@@ -62,7 +62,7 @@ export default navbar([
         icon: "fa-solid fa-magnifying-glass",
         prefix: "es/",
         children: [
-          {text: "Elasticsearch安装部署", icon: "fa-brands fa-searchengin", link: "Elasticsearch安装部署"},
+          {text: "Elasticsearch安装部署", icon: "fa-brands fa-searchengin", link: "ElasticSearch安装部署"},
         ],
       },
       {
@@ -77,7 +77,7 @@ export default navbar([
       {
         text: "分布式事务",
         icon: "fa-solid fa-network-wired",
-        prefix: "seate/",
+        prefix: "seata/",
         children: [
           {text: "Seata二阶段提交机制", link: "Seata分布式事务二阶段提交机制全面解读"},
           {text: "Seata部署与项目集成", link: "手把手教你部署与项目集成Seata"},
