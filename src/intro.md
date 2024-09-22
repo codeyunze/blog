@@ -14,4 +14,4 @@ star: true
 
 
 
-![扫码_搜索联合传播样式-白色版](.vuepress/public/assets/images/public_account.png)
+![扫码_搜索联合传播样式-白色版](images/public_account.png)
