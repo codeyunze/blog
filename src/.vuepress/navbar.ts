@@ -43,20 +43,12 @@ export default navbar([
       },
     ],
   },
-  /*{
-    text: "消息队列",
-    icon: "fa-solid fa-tower-cell",
-    prefix: "/mq/",
-    children: [
-      {text: "RabbitMQ安装", icon: "fa-solid fa-tower-broadcast", link: "RabbitMQ安装"},
-      {text: "RabbitMQ的理解", icon: "fa-solid fa-tower-broadcast", link: "RabbitMQ的理解"},
-    ],
-  },*/
   {
     text: "分布式篇",
     icon: "fa-solid fa-code-branch",
     prefix: "/distributed/",
     children: [
+      {text: "分布式的理论基础CAP理论", link: "分布式的理论基础CAP理论"},
       {
         text: "搜索引擎",
         icon: "fa-solid fa-magnifying-glass",
