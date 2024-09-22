@@ -1,6 +1,6 @@
 ---
 icon: circle-info
-cover: /assets/images/public_account.png
+cover: images/public_account.png
 date: 2024-01-01
 # 此页面会在文章列表置顶
 sticky: true
@@ -14,4 +14,4 @@ star: true
 
 
 
-![扫码_搜索联合传播样式-白色版](.vuepress/public/assets/images/public_account.png)
+![扫码_搜索联合传播样式-白色版](images/public_account.png)
