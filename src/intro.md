@@ -1,6 +1,6 @@
 ---
 icon: circle-info
-cover: images/public_account.png
+cover: /assets/images/public_account.png
 date: 2024-01-01
 # 此页面会在文章列表置顶
 sticky: true

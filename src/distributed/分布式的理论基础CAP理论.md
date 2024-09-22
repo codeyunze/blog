@@ -1,4 +1,5 @@
 ---
+cover: /assets/images/cap.png
 date: 2024-09-21
 order: 10
 categories:
