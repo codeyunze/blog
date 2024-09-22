@@ -10,4 +10,8 @@ index: false
 
 # 分布式
 
+CAP理论
+
 ShardingJDBC分库分表、RabbitMQ、RocketMQ、Kafka、Elasticsearch、Netty、
+
+性能监控Prometheus + Grafana
