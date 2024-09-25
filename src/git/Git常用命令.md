@@ -1,5 +1,5 @@
 ---
-icon: fa-solid fa-code-branch
+icon: fa-brands fa-git
 date: 2022-01-05
 author: 云泽
 category:

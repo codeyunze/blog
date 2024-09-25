@@ -39,7 +39,7 @@ export default hopeTheme({
       Email: "mailto:834363368@qq.com",
       Gitee: "https://gitee.com/cnyunze",
       GitHub: "https://github.com/yunze-gh",
-      Wechat: "https://mp.weixin.qq.com/mp/qrcode?scene=10000004&size=102&__biz=MzIwOTQ3NzQ5NA==&mid=2247483664&idx=1&sn=b92038e00199e99fc55c4615554c9d63&send_time=",
+      Wechat: "https://yunze-gh.github.io/blog/assets/images/public_account.png",
       /*VuePressThemeHope: {
         icon: "https://yunze-gh.github.io/blog/logo.png?raw=true",
         link: "https://theme-hope.vuejs.press",
