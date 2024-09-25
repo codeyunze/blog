@@ -1,17 +1,12 @@
 ---
-title: 分布式
+title: 并发编程
 icon: fa-solid fa-layer-group
-date: 2024-09-08
+date: 2024-09-23
 dir:
   collapsible: false
   link: false
 index: false
 ---
 
-# 分布式
+# 并发编程
 
-CAP理论
-
-ShardingJDBC分库分表、RabbitMQ、RocketMQ、Kafka、Elasticsearch、Netty、
-
-性能监控Prometheus + Grafana

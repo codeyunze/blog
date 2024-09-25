@@ -28,6 +28,8 @@ export default navbar([
           {text: "MySQL的意向锁", icon: "fa-solid fa-user-lock", link: "MySQL的意向锁"},
           {text: "数据库事务中的四大问题：脏读、脏写、不可重复读与幻读详解", icon: "fa-solid fa-shuffle", link: "数据库事务中的四大问题：脏读、脏写、不可重复读与幻读详解"},
           {text: "MVCC机制解析：提升数据库并发性能的关键", icon: "fa-solid fa-people-arrows", link: "MVCC机制解析：提升数据库并发性能的关键"},
+          {text: "MySQL普通索引与唯一索引的区别", link: "MySQL普通索引与唯一索引的区别"},
+          {text: "MySQL自定义排序ORDER BY FIELD", icon: "fa-solid fa-arrow-down-a-z", link: "MySQL自定义排序：使用ORDER BY FIELD实现灵活的数据排序"},
         ],
       },
       {
@@ -82,7 +84,7 @@ export default navbar([
     icon: "fa-solid fa-code-branch",
     prefix: "/git/",
     children: [
-      {text: "Git常用命令", icon: "fa-solid fa-code-branch", link: "Git常用命令"},
+      {text: "Git常用命令", icon: "fa-brands fa-git", link: "Git常用命令"},
       {text: "Git提交代码规范", icon: "fa-solid fa-code-branch", link: "Git提交代码规范"},
       {text: "修改历史版本代码方案", icon: "fa-solid fa-code-compare", link: "修改历史版本代码方案"},
     ],

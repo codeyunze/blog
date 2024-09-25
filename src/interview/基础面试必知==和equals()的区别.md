@@ -1,5 +1,5 @@
 ---
-icon: fa-solid fa-paste
+icon: fa-solid fa-equals
 date: 2024-09-19
 order: 25
 categories:
