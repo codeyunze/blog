@@ -3,7 +3,7 @@ import { navbar } from "vuepress-theme-hope";
 export default navbar([
   "/",
   {
-    text: "面试",
+    text: "面试篇",
     icon: "fa-solid fa-clipboard-question",
     prefix: "/interview/",
     children: [
@@ -12,7 +12,7 @@ export default navbar([
     ],
   },
   {
-    text: "数据库",
+    text: "数据库篇",
     icon: "fa-solid fa-database",
     prefix: "database/",
     children: [
@@ -26,7 +26,7 @@ export default navbar([
           {text: "为何MySQL选择B+树作为索引结构", icon: "fa-solid fa-leaf", link: "为何MySQL选择B+树作为索引结构"},
           {text: "MySQL有哪些锁", icon: "fa-solid fa-lock", link: "MySQL有哪些锁"},
           {text: "MySQL的意向锁", icon: "fa-solid fa-user-lock", link: "MySQL的意向锁"},
-          {text: "数据库事务中的四大问题：脏读、脏写、不可重复读与幻读详解", icon: "fa-solid fa-shuffle", link: "数据库事务中的四大问题：脏读、脏写、不可重复读与幻读详解"},
+          {text: "事务中的脏读、脏写、不可重复读与幻读详解", icon: "fa-solid fa-shuffle", link: "数据库事务中的四大问题：脏读、脏写、不可重复读与幻读详解"},
           {text: "MVCC机制解析：提升数据库并发性能的关键", icon: "fa-solid fa-people-arrows", link: "MVCC机制解析：提升数据库并发性能的关键"},
           {text: "MySQL普通索引与唯一索引的区别", link: "MySQL普通索引与唯一索引的区别"},
           {text: "MySQL自定义排序ORDER BY FIELD", icon: "fa-solid fa-arrow-down-a-z", link: "MySQL自定义排序：使用ORDER BY FIELD实现灵活的数据排序"},
@@ -80,7 +80,7 @@ export default navbar([
     ],
   },
   {
-    text: "Git",
+    text: "Git篇",
     icon: "fa-solid fa-code-branch",
     prefix: "/git/",
     children: [
