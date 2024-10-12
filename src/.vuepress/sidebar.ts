@@ -25,7 +25,7 @@ export default sidebar({
     },
     {
       text: "分布式篇",
-      icon: "fa-solid fa-network-wired",
+      icon: "fa-solid fa-layer-group",
       prefix: "distributed/",
       link: "distributed/",
       // 折叠

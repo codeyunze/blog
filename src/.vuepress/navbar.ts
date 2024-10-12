@@ -48,7 +48,7 @@ export default navbar([
   },
   {
     text: "分布式篇",
-    icon: "fa-solid fa-network-wired",
+    icon: "fa-solid fa-layer-group",
     prefix: "/distributed/",
     children: [
       {text: "分布式的理论基础CAP理论", link: "分布式的理论基础CAP理论"},
