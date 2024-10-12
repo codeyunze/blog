@@ -15,3 +15,5 @@ CAP理论
 ShardingJDBC分库分表、RabbitMQ、RocketMQ、Kafka、Elasticsearch、Netty、
 
 性能监控Prometheus + Grafana
+
+![Snipaste_2024-10-04_22-34-30](images/Snipaste_2024-10-04_22-34-30.png)
