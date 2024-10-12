@@ -16,6 +16,7 @@ export default navbar([
     icon: "fa-solid fa-database",
     prefix: "database/",
     children: [
+      {text: "事务的ACID特性", link: "事务的ACID特性"},
       {
         text: "MySQL",
         icon: "fa-solid fa-database",
@@ -47,7 +48,7 @@ export default navbar([
   },
   {
     text: "分布式篇",
-    icon: "fa-solid fa-code-branch",
+    icon: "fa-solid fa-network-wired",
     prefix: "/distributed/",
     children: [
       {text: "分布式的理论基础CAP理论", link: "分布式的理论基础CAP理论"},
