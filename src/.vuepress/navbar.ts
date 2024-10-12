@@ -2,7 +2,7 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/",
-  {
+  /*{
     text: "面试篇",
     icon: "fa-solid fa-clipboard-question",
     prefix: "/interview/",
@@ -10,7 +10,7 @@ export default navbar([
       {text: "Spring常见面试题", icon: "fa-solid fa-leaf", link: "Spring常见面试题"},
       {text: "MySQL常见面试题", icon: "fa-solid fa-leaf", link: "MySQL常见面试题"},
     ],
-  },
+  },*/
   {
     text: "数据库篇",
     icon: "fa-solid fa-database",
