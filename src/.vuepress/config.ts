@@ -17,6 +17,22 @@ export default defineUserConfig({
     title: "云泽的博客",
     description: "未来的变数太多，而我所能做的，就是走好当下这一步。",
 
+    head: [
+        [
+            'script',
+            {},
+            `
+            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "https://hm.baidu.com/hm.js?fecbf385c5ae1d3411e1649913978cd6";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+            })();
+            `
+        ]
+    ],
+
     theme,
 
     alias: {
