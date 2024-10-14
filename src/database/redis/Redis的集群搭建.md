@@ -797,9 +797,9 @@ For check, fix, reshard, del-node, set-timeout you can specify the host and port
 
 1. slave发现自己的master节点变为fail；
 2. slave将自己记录的集群周期加1，及currentEpoch加1，并广播FAILOVER_AUTH_REQUEST信息；
-3. 集群其他所有节点都会收到该信息，但是只有master主节点会进行响应，会判断请求者的合法性（发送请求的节点是否是8007主节点的slave从节点），并发送FILOVER_AUTH_ACK，每个master主节点对每一个epoch周期只发送一次ack；（例：8001实例接收到了8008和8009两个slave节点的FAILOVER_AUTH_REQUEST信息（假设8001先接收到8008节点的请求），但是8001这个master节点只会响应先接收的那个请求，及响应8008节点，对其发送FILOVER_AUTH_ACK信息；
+3. 集群其他所有节点都会收到该信息，但是只有master主节点会进行响应，会判断请求者的合法性（发送请求的节点是否是8007主节点的slave从节点），并发送FILOVER_AUTH_ACK，每个master主节点对每一个epoch周期只发送一次ack；（例：8001实例接收到了8008和8009两个slave节点的FAILOVER_AUTH_REQUEST信息（假设8001先接收到8008节点的请求），但是8001这个master节点只会响应先接收的那个请求，即响应8008节点，对其发送FILOVER_AUTH_ACK信息；
 4. 尝试failover的8008和8009 slave节点会收集各master节点返回的FILOVER_AUTH_ACK；
-5. 如果某一slave收到了超过半数master节点的ack，就会变成该小集群里新的master节点；（集群至少要有3个主节点的原因）（如果8008和8009两个slave节点收到的都是刚好半数的master节点的ack，则会重新从第2步开始）
+5. 如果某一slave收到了超过半数master节点的ack，就会变成该小集群里新的master节点；（集群至少要有3个主节点的原因）（如果8008和8009 **两个slave节点收到的都是刚好半数的master节点的ack，则会重新从第2步开始** ）
 6. 该slave会广播pong消息通知其他集群节点终止选举；
 
 

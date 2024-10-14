@@ -4,17 +4,6 @@ export default sidebar({
   "/": [
     "",
     {
-      text: "面试篇",
-      icon: "fa-solid fa-clipboard-question",
-      prefix: "interview/",
-      link: "interview/",
-      // 折叠
-      collapsible: true,
-      // 可选的。设置分组是否默认展开，默认值是 false
-      expanded: true,
-      children: "structure",
-    },
-    {
       text: "数据库篇",
       icon: "fa-solid fa-database",
       prefix: "database/",
@@ -25,8 +14,7 @@ export default sidebar({
     },
     {
       text: "分布式篇",
-      icon: "fa-solid fa-database",
-      // icon: "fa-thin fa-chart-network",
+      icon: "fa-solid fa-layer-group",
       prefix: "distributed/",
       link: "distributed/",
       // 折叠
@@ -71,6 +59,17 @@ export default sidebar({
       // 可选的。设置分组是否默认展开，默认值是 false
       expanded: true,
       prefix: "other/",
+      children: "structure",
+    },
+    {
+      text: "面试篇",
+      icon: "fa-solid fa-clipboard-question",
+      prefix: "interview/",
+      link: "interview/",
+      // 折叠
+      collapsible: true,
+      // 可选的。设置分组是否默认展开，默认值是 false
+      expanded: true,
       children: "structure",
     },
     /*{

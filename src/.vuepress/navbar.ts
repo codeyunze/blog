@@ -2,7 +2,7 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/",
-  {
+  /*{
     text: "面试篇",
     icon: "fa-solid fa-clipboard-question",
     prefix: "/interview/",
@@ -10,12 +10,13 @@ export default navbar([
       {text: "Spring常见面试题", icon: "fa-solid fa-leaf", link: "Spring常见面试题"},
       {text: "MySQL常见面试题", icon: "fa-solid fa-leaf", link: "MySQL常见面试题"},
     ],
-  },
+  },*/
   {
     text: "数据库篇",
     icon: "fa-solid fa-database",
     prefix: "database/",
     children: [
+      {text: "事务的ACID特性", link: "事务的ACID特性"},
       {
         text: "MySQL",
         icon: "fa-solid fa-database",
@@ -47,7 +48,7 @@ export default navbar([
   },
   {
     text: "分布式篇",
-    icon: "fa-solid fa-code-branch",
+    icon: "fa-solid fa-layer-group",
     prefix: "/distributed/",
     children: [
       {text: "分布式的理论基础CAP理论", link: "分布式的理论基础CAP理论"},
