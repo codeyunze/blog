@@ -42,6 +42,7 @@ export default navbar([
           {text: "Redis的哨兵架构配置", icon: "fa-solid fa-registered", link: "Redis的哨兵架构配置"},
           {text: "Redis的主从架构", icon: "fa-solid fa-registered", link: "Redis的主从架构"},
           {text: "Redis的集群搭建", icon: "fa-solid fa-registered", link: "Redis的集群搭建"},
+          {text: "Redis集群的脑裂问题", link: "Redis集群的脑裂问题"},
         ],
       },
     ],
