@@ -10,6 +10,10 @@ tag:
   - MQ
 ---
 
+使用图文结合，详细讲述rabbitmq从下载到安装使用的每一个步骤。
+
+<!-- more -->
+
 # RabbitMQ安装
 
 ## 1. erlang和RabbitMQ的版本需求对照
