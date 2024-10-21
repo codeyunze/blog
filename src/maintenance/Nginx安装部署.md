@@ -1,5 +1,6 @@
 ---
 icon: fa-brands fa-docker
+title:  CentOS系统Nginx的安装部署
 date: 2024-10-18
 order: 10
 categories:
@@ -13,7 +14,9 @@ nginx的安装部署详细操作步骤。
 
 <!-- more -->
 
-Nginx安装部署
+# CentOS系统Nginx的安装部署
+
+## 安装包准备
 
 在服务器上准备好nginx的安装包
 
@@ -29,7 +32,7 @@ tar -zxvf nginx-1.26.1.tar.gz
 
 ![image-20241019090255132](images/image-20241019090255132.png)
 
-执行安装命令
+## 执行命令安装
 
 ```shell
 # 第一步
@@ -53,15 +56,21 @@ cd /usr/local/nginx/
 
 ![image-20241019090741258](images/image-20241019090741258.png)
 
+
+
+## 配置调整验证
+
 验证配置文件nginx.conf是否正常
 
 ```shell
 ./sbin/nginx -t
 ```
 
-配置文件在/usr/local/nginx/conf/nginx.conf
+配置文件在/usr/local/nginx/conf/nginx.conf目录下，如有需要可在该配置文件里进行调整。
 
-启动nginx
+## 启动运行
+
+启动nginx，命令如下
 
 ```shell
 ./sbin/nginx
@@ -73,11 +82,15 @@ cd /usr/local/nginx/
 
 ![image-20241019091017734](images/image-20241019091017734.png)
 
+## 添加SSL模块
+
 如果有配置ssl证书的需求，还需开启SSL模块，否则校验配置文件时会提示如下信息
 
 ![image-20241019093010688](images/image-20241019093010688.png)
 
-处理方案
+
+
+### 处理方案
 
 先进入到之前nginx包的解压目录下
 

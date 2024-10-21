@@ -12,7 +12,7 @@ Docker常用操作和常用中间件的部署。
 
 <!-- more -->
 
-
+# Docker运维操作
 
 docker 切换镜像
 
@@ -80,3 +80,46 @@ docker 安装redis
    ```shell
    docker run -d --name=rabbitmq -v /usr/local/docker/rabbitmq:/var/lib/rabbitmq -p 15672:15672 -p 5672:5672 -e RABBITMQ_DEFAULT_USER=admin -e RABBITMQ_DEFAULT_PASS=admin rabbitmq:management
    ```
+
+
+
+10. 查询中间件镜像的具体版本
+
+    ```shell
+    docker image inspect redis:latest | grep -i version
+    ```
+
+    
+
+11. 
+
+
+
+将镜像保存为tar文件
+
+```shell
+docker save [IMAGE ID] > nacos-2.3.2.tar
+```
+
+将tar文件载入docker
+
+```shell
+docker load < nacos-2.3.2.tar
+```
+
+
+
+docker修改镜像的名称和TAG版本
+
+构建一个镜像之后，发现镜像的名称和TAG为none
+
+![image-20241019152703306](images/image-20241019152703306.png)
+
+修改方式
+
+```shell
+# docker tag [IMAGE ID] [新的REPOSITORY]:[新的TAG]
+docker tag d3063c1db2bb nacos/nacos-server:v2.3.2
+```
+
+![image-20241019152927309](images/image-20241019152927309.png)
