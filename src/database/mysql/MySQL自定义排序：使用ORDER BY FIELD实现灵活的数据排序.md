@@ -11,13 +11,17 @@ tag:
   - 排序
 ---
 
-# MySQL自定义排序：使用ORDER BY FIELD实现灵活的数据排序
-
 在实际应用中，我们经常需要对查询结果进行特定顺序的排序，而不仅仅是按照字母或数字的自然顺序。
 
 MySQL提供了 `ORDER BY FIELD` 函数，允许我们根据自定义的顺序对查询结果进行排序。
 
 本文将详细介绍 `ORDER BY FIELD` 的用法，并通过具体示例展示其强大功能。
+
+<!-- more -->
+
+# MySQL自定义排序：使用ORDER BY FIELD实现灵活的数据排序
+
+
 
 ## 1. ORDER BY FIELD的基本概念
 

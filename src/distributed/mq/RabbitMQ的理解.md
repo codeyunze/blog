@@ -10,6 +10,10 @@ tag:
   - MQ
 ---
 
+RabbitMQ有Connections连接、Channels信道、Exchanges交换机、和存储消息的Queues队列。
+
+<!-- more -->
+
 # RabbitMQ的理解
 
 ## 基础理解

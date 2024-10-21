@@ -18,6 +18,7 @@ export default defineUserConfig({
     description: "未来的变数太多，而我所能做的，就是走好当下这一步。",
 
     head: [
+        ['link', { rel: 'icon', href: '/assets/images/logo.png' }],
         [
             'script',
             {},
@@ -25,7 +26,7 @@ export default defineUserConfig({
             var _hmt = _hmt || [];
             (function() {
               var hm = document.createElement("script");
-              hm.src = "https://hm.baidu.com/hm.js?fecbf385c5ae1d3411e1649913978cd6";
+              hm.src = "https://hm.baidu.com/hm.js?2fd99d976725726aa14c048b48dd2338";
               var s = document.getElementsByTagName("script")[0]; 
               s.parentNode.insertBefore(hm, s);
             })();

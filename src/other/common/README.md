@@ -15,3 +15,11 @@ index: false
 规范
 
 ![image-20241006162402952](images/image-20241006162402952.png)
+
+![image-20241015194528375](images/image-20241015194528375.png)
+
+
+
+linux目录说明
+
+![image-20241017234105363](images/image-20241017234105363.png)
