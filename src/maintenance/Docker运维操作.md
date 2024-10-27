@@ -14,11 +14,110 @@ Docker常用操作和常用中间件的部署。
 
 # Docker运维操作
 
+
+
+## CentOS系统安装Docker
+
+### 1.准备docker所需环境
+
+##### 执行命令清理相关环境，防止出现冲突
+
+```shell
+sudo yum remove docker     docker-client     docker-client-latest     docker-common     docker-latest     docker-latest-logrotate     docker-logrotate     docker-engine
+```
+
+![image-20241021190735335](images/image-20241021190735335.png)
+
+
+
+##### 安装yum-utils工具包
+
+```shell
+sudo yum install -y yum-utils
+```
+
+![image-20241021190750433](images/image-20241021190750433.png)
+
+
+
+##### 设置阿里的镜像
+
+```shell
+sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+```
+
+![image-20241021190828756](images/image-20241021190828756.png)
+
+
+
+### 3.安装docker
+
+```shell
+sudo yum install docker-ce docker-ce-cli containerd.io
+```
+
+![image-20241021190925025](images/image-20241021190925025.png)
+
+![image-20241021191010835](images/image-20241021191010835.png)
+
+![image-20241021191150185](images/image-20241021191150185.png)
+
+![image-20241021191202321](images/image-20241021191202321.png)
+
+
+
+启动docker
+
+```shell
+sudo systemctl start docker
+```
+
+
+
+### 2.验证docker
+
+查看docker版本
+
+```shell
+docker -v
+```
+
+![image-20241021191246957](images/image-20241021191246957.png)
+
+
+
+设置镜像源，推荐使用阿里的
+
+```shell
+sudo tee /etc/docker/daemon.json <<EFO
+{
+	"registry-mirrors": [
+		"https://xxxxxxx.mirror.aliyuncs.com"
+	]
+}
+EFO
+```
+
+![image-20241021192005889](images/image-20241021192005889.png)
+
+```shell
+# 加载新配置信息
+sudo systemctl daemon-reload
+# 重启docker
+sudo systemctl restart docker
+```
+
+
+
+
+
+
+
 docker 切换镜像
 
 [可用] https://www.cnblogs.com/xietingfeng321/p/18451170
 
-[已不可用] https://blog.csdn.net/Suyiixx/article/details/129891688
+## Docker常用操作
 
 docker 安装redis
 
@@ -91,17 +190,17 @@ docker 安装redis
 
     
 
-11. 
+## 镜像导入导出
 
-
-
-将镜像保存为tar文件
+### 将镜像保存为tar文件
 
 ```shell
 docker save [IMAGE ID] > nacos-2.3.2.tar
 ```
 
-将tar文件载入docker
+
+
+### 将tar文件载入docker
 
 ```shell
 docker load < nacos-2.3.2.tar
@@ -109,7 +208,7 @@ docker load < nacos-2.3.2.tar
 
 
 
-docker修改镜像的名称和TAG版本
+### 修改镜像的名称和TAG版本
 
 构建一个镜像之后，发现镜像的名称和TAG为none
 
@@ -123,3 +222,32 @@ docker tag d3063c1db2bb nacos/nacos-server:v2.3.2
 ```
 
 ![image-20241019152927309](images/image-20241019152927309.png)
+
+
+
+
+
+
+
+
+
+
+
+## 同一镜像多个系统架构版本解决方案
+```shell
+docker manifest create registry.cn-hangzhou.aliyuncs.com/yunze_images_space/seata-server:latest registry.cn-hangzhou.aliyuncs.com/yunze_images_space/seata-server:arm64 registry.cn-hangzhou.aliyuncs.com/yunze_images_space/seata-server:x64
+```
+
+
+
+```shell
+docker manifest push registry.cn-hangzhou.aliyuncs.com/yunze_images_space/seata-server:latest && docker manifest rm registry.cn-hangzhou.aliyuncs.com/yunze_images_space/seata-server:latest
+```
+
+
+
+
+
+```shell
+docker pull --platform=linux/amd64 registry.cn-hangzhou.aliyuncs.com/yunze_images_space/seata-server:latest
+```

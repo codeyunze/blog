@@ -1,13 +1,12 @@
 ---
-icon: fa-brands fa-docker
-title:  CentOS系统Nginx的安装部署
+icon: fa-solid fa-n
+title: CentOS系统Nginx的安装部署
 date: 2024-10-18
 order: 10
 categories:
-   - Docker
-tags:
-   - 容器
-
+   - Nginx
+tag:
+  - 安装部署手册
 ---
 
 nginx的安装部署详细操作步骤。
