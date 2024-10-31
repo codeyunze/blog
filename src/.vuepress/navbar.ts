@@ -53,6 +53,7 @@ export default navbar([
     prefix: "/distributed/",
     children: [
       {text: "分布式的理论基础CAP理论", link: "分布式的理论基础CAP理论"},
+      {text: "自动化性能监控系统安装部署", icon: "fa-solid fa-desktop", link: "自动化性能监控系统安装部署"},
       {
         text: "搜索引擎",
         icon: "fa-solid fa-magnifying-glass",
@@ -78,7 +79,7 @@ export default navbar([
           {text: "Seata二阶段提交机制", link: "Seata分布式事务二阶段提交机制全面解读"},
           {text: "Seata部署与项目集成", link: "手把手教你部署与项目集成Seata"},
         ],
-      },
+      }
     ],
   },
   {
