@@ -11,7 +11,7 @@ import {commentPlugin} from "@vuepress/plugin-comment";
 const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
-    base: "/blog/",
+    base: "/",
 
     lang: "zh-CN",
     title: "云泽的博客",
