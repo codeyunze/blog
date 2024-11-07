@@ -107,6 +107,17 @@ export default navbar([
         ],
       },
       {
+        text: "面试",
+        icon: "fa-solid fa-network-wired",
+        prefix: "interview/",
+        children: [
+          {text: "基础面试必知==和equals()的区别", icon: "fa-solid fa-equals", link: "基础面试必知==和equals()的区别"},
+          {text: "基础面试必知HashMap的数据结构与扩容机制", icon: "fa-solid fa-paste", link: "基础面试必知HashMap的数据结构与扩容机制"},
+          {text: "MySQL常见的面试题", icon: "fa-solid fa-database", link: "MySQL常见的面试题"},
+          {text: "Spring常见面试问答题", icon: "fa-solid fa-leaf", link: "Spring常见面试题"},
+        ],
+      },
+      {
         text: "其他",
         icon: "fa-brands fa-creative-commons",
         prefix: "common/",

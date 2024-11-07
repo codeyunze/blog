@@ -3,7 +3,7 @@ title: 分布式篇
 icon: fa-solid fa-layer-group
 date: 2024-09-08
 dir:
-  collapsible: false
+  collapsible: true
   link: false
 index: false
 ---

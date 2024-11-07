@@ -61,7 +61,7 @@ export default sidebar({
       prefix: "other/",
       children: "structure",
     },
-    {
+    /*{
       text: "面试篇",
       icon: "fa-solid fa-clipboard-question",
       prefix: "interview/",
@@ -71,20 +71,20 @@ export default sidebar({
       // 可选的。设置分组是否默认展开，默认值是 false
       expanded: true,
       children: "structure",
-    },
+    },*/
     /*{
       text: "文章",
       icon: "book",
       prefix: "posts/",
       children: "structure",
     },*/
-    {
+    /*{
       text: "如何使用",
       icon: "laptop-code",
       prefix: "demo/",
       link: "demo/",
       children: "structure",
-    },
+    },*/
     "intro"
   ],
 });
