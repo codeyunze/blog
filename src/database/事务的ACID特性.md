@@ -3,6 +3,8 @@ title: 事务的ACID特性
 date: 2024-10-11
 author: 云泽
 order: 30
+# 此页面会出现在星标文章中
+star: true
 category:
    - 数据库
 tag:

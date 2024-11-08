@@ -2,6 +2,8 @@
 icon: fa-brands fa-git
 date: 2022-01-05
 author: 云泽
+# 此页面会出现在星标文章中
+star: true
 category:
   - Git
 tag:

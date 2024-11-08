@@ -1,7 +1,9 @@
 ---
 icon: fa-brands fa-docker
-date: 2024-10-24
+date: 2024-11-06
 order: 30
+# 此页面会出现在星标文章中
+star: true
 categories:
    - Docker
 tags:

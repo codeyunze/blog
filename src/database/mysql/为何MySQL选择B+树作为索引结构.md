@@ -2,6 +2,8 @@
 icon: fa-solid fa-network-wired
 date: 2024-09-08
 order: 15
+# 此页面会出现在星标文章中
+star: true
 categories:
    - 数据库
 tags:

@@ -1,14 +1,9 @@
 import {defineUserConfig} from "vuepress";
-import {getDirname, path} from "vuepress/utils";
+import { searchProPlugin } from "vuepress-plugin-search-pro";
 
-
-import theme from "./theme.js";
-// import {searchProPlugin} from "vuepress-plugin-search-pro";
 import {commentPlugin} from "@vuepress/plugin-comment";
 
-
-
-const __dirname = getDirname(import.meta.url);
+import theme from "./theme.js";
 
 export default defineUserConfig({
     base: "/",
@@ -17,8 +12,13 @@ export default defineUserConfig({
     title: "云泽的博客",
     description: "未来的变数太多，而我所能做的，就是走好当下这一步。",
 
+    theme,
+
+    // 和 PWA 一起启用
+    // shouldPrefetch: false,
+
     head: [
-        ['link', { rel: 'icon', href: '/assets/images/logo.png' }],
+        ['link', {rel: 'icon', href: '/assets/images/logo.png'}],
         [
             'script',
             {},
@@ -33,32 +33,7 @@ export default defineUserConfig({
             `
         ]
     ],
-
-    theme,
-
-    alias: {
-        "@theme-hope/modules/blog/components/BlogHero": path.resolve(
-            __dirname,
-            "./components/BlogHero.vue",
-        ),
-    },
-
     plugins: [
-        /*comment({
-            provider: 'Giscus',
-            repo: "yunze-gh/blog",
-            repoId: "R_kgDOMo44_A",
-            category: "General",
-            categoryId: "DIC_kwDOMo44_M4CiKOl",
-            mapping: "title",
-            strict: false,
-            reactionsEnabled: true,
-            inputPosition: "top"
-        }),*/
-       /* searchProPlugin({
-          indexContent: true,
-        //   hotReload: true
-        }),*/
         commentPlugin({
             provider: 'Giscus',
             repo: "yunze-gh/blog",
@@ -69,10 +44,21 @@ export default defineUserConfig({
             strict: false,
             reactionsEnabled: true,
             inputPosition: "top"
-        })
-    ],
-
-
-    // 和 PWA 一起启用
-    // shouldPrefetch: false,
+        }),
+        searchProPlugin({
+            customFields: [
+                {
+                    indexContent: true,
+                    indexOptions: {
+                        // 使用 nodejs-jieba 进行分词
+                        tokenize: (text, fieldName) =>
+                            fieldName === "id" ? [text] : cut(text, true),
+                    },
+                    name: "author",
+                    getter: (page) => page.frontmatter.author,
+                    formatter: "作者：$content",
+                },
+            ],
+        }),
+    ]
 });

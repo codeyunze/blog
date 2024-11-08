@@ -4,6 +4,8 @@ title:  MVCC机制解析：提升数据库并发性能的关键
 date: 2024-09-15
 author: 云泽
 order: 35
+# 此页面会出现在星标文章中
+star: true
 category:
    - 数据库
 tag:
