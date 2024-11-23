@@ -2,11 +2,11 @@
 home: true
 layout: BlogHome
 icon: home
-title: 云泽的博客
+title: 云泽知识库
 #heroImage: https://yunze-gh.github.io/blog/logo.png?raw=true
 heroImage: /assets/images/logo.png
 heroAlt: 云泽
-heroText: 云泽的博客
+heroText: 云泽知识库
 heroFullScreen: true
 tagline: 未来的变数太多，而我所能做的，就是走好当下这一步。
 #bgImage: https://yunze-gh.github.io/blog/bg.png?raw=true
@@ -42,5 +42,5 @@ projects:
     desc: 日常记录
     link: https://www.yuque.com/yuqueyonghuwbotkt/cd2zzn
 
-footer: 云泽的博客
+footer: 云泽知识库
 ---

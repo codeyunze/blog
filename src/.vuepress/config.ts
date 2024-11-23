@@ -9,7 +9,7 @@ export default defineUserConfig({
     base: "/",
 
     lang: "zh-CN",
-    title: "云泽的博客",
+    title: "云泽知识库",
     description: "未来的变数太多，而我所能做的，就是走好当下这一步。",
 
     theme,

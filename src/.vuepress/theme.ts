@@ -26,7 +26,7 @@ export default hopeTheme({
     sidebar,
 
     // 页脚
-    footer: "云泽的博客",
+    footer: "云泽知识库",
     displayFooter: true,
 
     // 博客相关

@@ -277,7 +277,7 @@ chmod +x /usr/local/bin/docker-compose
 验证 **docker-compose**
 
 ```shell
-docker-compose -version
+docker-compose --version
 ```
 
 ![image-20241028085058995](images/image-20241028085058995.png)
