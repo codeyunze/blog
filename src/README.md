@@ -12,15 +12,15 @@ tagline: 未来的变数太多，而我所能做的，就是走好当下这一�
 #bgImage: https://yunze-gh.github.io/blog/bg.png?raw=true
 bgImage: /assets/images/cover2.jpg
 projects:
-  - icon: project
-    name: 知识库
-    desc: 学习记录
-    link: https://gitee.com/cnyunze/knowledge.git
-
   - icon: link
     name: 综合商城
     desc: 商城项目案例仓库
-    link: https://gitee.com/cnyunze/yz-mall.git
+    link: https://gitee.com/cnyunze/yz-mall.git  
+
+  - icon: fa-solid fa-desktop
+    name: 性能监控
+    desc: Grafana + Prometheus（普罗米修斯）系统性能监控
+    link: http://8.134.220.153:3000/d/MQWgroiiz/mysql-overview?orgId=1&refresh=5s
 
   # - icon: article
   #   name: 文章名称

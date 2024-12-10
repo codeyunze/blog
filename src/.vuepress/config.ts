@@ -4,6 +4,7 @@ import { searchProPlugin } from "vuepress-plugin-search-pro";
 import {commentPlugin} from "@vuepress/plugin-comment";
 
 import theme from "./theme.js";
+import {sitemapPlugin} from "@vuepress/plugin-sitemap";
 
 export default defineUserConfig({
     base: "/",
@@ -19,6 +20,7 @@ export default defineUserConfig({
 
     head: [
         ['link', {rel: 'icon', href: '/assets/images/logo.png'}],
+        ['meta', {name: 'msvalidate.01', content: '0508C8F9658C27122ABCB4C8941A68F7'}],
         [
             'script',
             {},
@@ -34,6 +36,8 @@ export default defineUserConfig({
         ]
     ],
     plugins: [
+        sitemapPlugin({hostname: "https://blog.3xj.club", sitemapFilename: "sitemap.xml"}
+        ),
         commentPlugin({
             provider: 'Giscus',
             repo: "yunze-gh/blog",

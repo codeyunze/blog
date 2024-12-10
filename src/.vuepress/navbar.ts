@@ -165,6 +165,11 @@ export default navbar([
                 icon: "fa-solid fa-link",
                 link: "https://3xj.club/#/login",
             },
+            {
+                text: "性能监控",
+                icon: "fa-solid fa-desktop",
+                link: "http://8.134.220.153:3000/d/MQWgroiiz/mysql-overview?orgId=1&refresh=5s",
+            },
         ],
     },
 ]);
