@@ -1,5 +1,6 @@
 import {defineUserConfig} from "vuepress";
-import { searchProPlugin } from "vuepress-plugin-search-pro";
+// import { searchProPlugin } from "vuepress-plugin-search-pro";
+import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 
 import {commentPlugin} from "@vuepress/plugin-comment";
 
@@ -49,7 +50,13 @@ export default defineUserConfig({
             reactionsEnabled: true,
             inputPosition: "top"
         }),
-        searchProPlugin({
+        docsearchPlugin({
+            injectStyles: true,
+            appId: "P1T06COSTD",
+            apiKey: "7b3426f4f4464d6470219c00a07a5ac0",
+            indexName: "3xj"
+        })
+        /*searchProPlugin({
             customFields: [
                 {
                     indexContent: true,
@@ -63,6 +70,6 @@ export default defineUserConfig({
                     formatter: "作者：$content",
                 },
             ],
-        }),
+        }),*/
     ]
 });
