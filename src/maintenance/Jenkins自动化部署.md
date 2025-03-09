@@ -200,7 +200,7 @@ Jenkins 是一个开源的持续集成（Continuous Integration, CI）和持续�
    - 验证是否可以无密码登录远程
 
      ```shell
-     ssh root@服务器IP地址
+     服务器IP地址
      ```
 
    - 在Jenkins上配置Publish over SSH
