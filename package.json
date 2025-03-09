@@ -1,27 +1,28 @@
 {
-  "name": "blog",
-  "description": "云泽的博客",
-  "version": "2.0.1",
-  "license": "MIT",
+  "name": "my-vuepress-site",
   "type": "module",
+  "version": "1.0.0",
+  "description": "云泽的主页",
+  "packageManager": "pnpm@9.13.2",
+  "author": "yunze <56632502+YUNZE-GH@users.noreply.github.com>",
+  "license": "MIT",
+  "engines": {
+    "node": "^18.20.0 || >=20.0.0"
+  },
   "scripts": {
-    "docs:build": "vuepress-webpack build src",
-    "docs:clean-dev": "vuepress-webpack dev src --clean-cache",
-    "docs:dev": "vuepress-webpack dev src",
-    "docs:update-package": "pnpm dlx vp-update"
+    "docs:dev": "vuepress dev docs",
+    "docs:dev-clean": "vuepress dev docs --clean-cache --clean-temp",
+    "docs:build": "vuepress build docs --clean-cache --clean-temp",
+    "docs:preview": "http-server docs/.vuepress/dist",
+    "vp-update": "pnpm dlx vp-update"
   },
   "devDependencies": {
-    "@vuepress/bundler-webpack": "2.0.0-rc.19",
-    "@vuepress/plugin-comment": "2.0.0-rc.68",
-    "@vuepress/plugin-docsearch": "^2.0.0-rc.68",
-    "or": "^0.2.0",
-    "sass-embedded": "^1.83.0",
-    "sass-loader": "^16.0.4",
-    "vue": "^3.5.13",
+    "@vuepress/bundler-vite": "2.0.0-rc.19",
     "vuepress": "2.0.0-rc.19",
-    "vuepress-theme-hope": "2.0.0-rc.66"
-  },
-  "dependencies": {
-    "vuepress-plugin-search-pro": "2.0.0-rc.59"
+    "vuepress-theme-plume": "1.0.0-rc.130",
+    "http-server": "^14.1.1",
+    "vue": "^3.5.13",
+    "sass-embedded": "^1.83.4",
+    "typescript": "^5.7.3"
   }
 }
