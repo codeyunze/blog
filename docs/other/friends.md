@@ -19,6 +19,6 @@ list:
     name: 云泽的商城
     link: https://3xj.club/#/login
     avatar: http://pic.3xj.club/typora202503071458077.png
-    desc: 即使举棋不定，徘徊如雾，纵会错失，纵会退却，但灵魂深处总有一盏不灭的灯，照亮犹豫者终将迈出的那一步。
+    desc: 基于SpringCloud、Mybatis、Sa-Token、Nacos、Seata、Redis、Elasticsearch、Rabbitmq、腾讯云COS对象存储开发的商城系统。
 permalink: /article/4o99lto5/
 ---
