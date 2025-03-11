@@ -10,7 +10,21 @@ export default defineUserConfig({
 
   head: [
     // 配置站点图标
-    ['link', { rel: 'icon', type: 'images/png', href: 'https://theme-plume.vuejs.press/favicon-32x32.png' }],
+    ['link', { rel: 'icon', type: 'images/png', href: 'https://blog.3xj.club/plume.png' }],
+    ['meta', {name: 'msvalidate.01', content: '0508C8F9658C27122ABCB4C8941A68F7'}],
+    [
+      'script',
+      {},
+      `
+            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "https://hm.baidu.com/hm.js?2fd99d976725726aa14c048b48dd2338";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+            })();
+            `
+    ]
   ],
 
   bundler: viteBundler(),
@@ -18,7 +32,7 @@ export default defineUserConfig({
 
   theme: plumeTheme({
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
-    hostname: 'https://gaohan.asia',
+    hostname: 'https://blog.3xj.club',
 
     /* 文档仓库配置，用于 editLink */
     // docsRepo: '',
@@ -95,24 +109,24 @@ export default defineUserConfig({
           'vue-html',
           'nginx',
           'text'],
-        twoslash: true, // 启用 twoslash
+        // twoslash: true, // 启用 twoslash
         whitespace: true, // 启用 空格/Tab 高亮
         lineNumbers: true, // 启用行号
       },
 
       /* 本地搜索, 默认启用 */
-      search: true,
+      search: false,
 
       /**
        * Algolia DocSearch
        * 启用此搜索需要将 本地搜索 search 设置为 false
        * @see https://theme-plume.vuejs.press/config/plugins/search/#algolia-docsearch
        */
-      // docsearch: {
-      //   appId: '',
-      //   apiKey: '',
-      //   indexName: '',
-      // },
+      docsearch: {
+        appId: 'P1T06COSTD',
+        apiKey: '1d4c82894744f7736e1a4fdbb0bd394d',
+        indexName: '3xj',
+      },
 
       /* 文章字数统计、阅读时间，设置为 false 则禁用 */
       // readingTime: true,
@@ -179,17 +193,17 @@ export default defineUserConfig({
        * 评论 comments
        * @see https://theme-plume.vuejs.press/guide/features/comments/
        */
-      // comment: {
-      //   provider: '', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
-      //   comment: true,
-      //   repo: '',
-      //   repoId: '',
-      //   category: '',
-      //   categoryId: '',
-      //   mapping: 'pathname',
-      //   reactionsEnabled: true,
-      //   inputPosition: 'top',
-      // },
+      comment: {
+        provider: 'Giscus', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
+        comment: true,
+        repo: 'codeyunze/blog',
+        repoId: 'R_kgDOMo44_A',
+        category: 'General',
+        categoryId: 'DIC_kwDOMo44_M4CiKOl',
+        mapping: 'title',
+        reactionsEnabled: true,
+        inputPosition: 'top',
+      },
     },
 
     /**
