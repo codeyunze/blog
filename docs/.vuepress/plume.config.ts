@@ -6,7 +6,7 @@ import { notes } from './notes'
  * @see https://theme-plume.vuejs.press/config/basic/
  */
 export default defineThemeConfig({
-  logo: 'http://pic.3xj.club/typora202503061703766.png',
+  logo: 'https://blog.3xj.club/a/plume.png',
 
   appearance: true,  // 配置 深色模式
 
@@ -37,7 +37,7 @@ export default defineThemeConfig({
    * @see https://theme-plume.vuejs.press/config/basic/#profile
    */
   profile: {
-    avatar: 'http://pic.3xj.club/typora202503061507011.png',
+    avatar: 'https://blog.3xj.club/a/Snipaste_2025-03-06_14-35-40.png',
     name: '云泽',
     description: '专注技术深耕与实战沉淀的开发者札记',
     // circle: true,
