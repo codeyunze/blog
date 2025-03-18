@@ -10,7 +10,7 @@ export default defineUserConfig({
 
   head: [
     // 配置站点图标
-    ['link', { rel: 'icon', type: 'images/png', href: 'https://blog.3xj.club/plume.png' }],
+    ['link', { rel: 'icon', type: 'images/png', href: 'https://gaohan.asia/plume.png' }],
     ['meta', {name: 'msvalidate.01', content: '0508C8F9658C27122ABCB4C8941A68F7'}],
     [
       'script',
@@ -32,7 +32,7 @@ export default defineUserConfig({
 
   theme: plumeTheme({
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
-    hostname: 'https://blog.3xj.club',
+    hostname: 'https://www.gaohan.asia',
 
     /* 文档仓库配置，用于 editLink */
     // docsRepo: '',
