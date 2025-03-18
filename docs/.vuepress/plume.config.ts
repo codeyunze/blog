@@ -6,7 +6,7 @@ import { notes } from './notes'
  * @see https://theme-plume.vuejs.press/config/basic/
  */
 export default defineThemeConfig({
-  logo: 'https://blog.3xj.club/a/plume.png',
+  logo: 'https://gaohan.asia/a/plume.png',
 
   appearance: true,  // 配置 深色模式
 
@@ -28,16 +28,18 @@ export default defineThemeConfig({
   createTime: true, // 是否显示文章创建时间
 
   /* 站点页脚 */
-  // footer: {
-  //   message: 'Power by <a target="_blank" href="https://v2.vuepress.vuejs.org/">VuePress</a> & <a target="_blank" href="https://theme-plume.vuejs.press">vuepress-theme-plume</a>',
-  //   copyright: '',
-  // },
+  footer: {
+    copyright: '',
+    // message: 'Power by <a target="_blank" href="https://v2.vuepress.vuejs.org/">VuePress</a> & <a target="_blank" href="https://theme-plume.vuejs.press">vuepress-theme-plume</a>',
+    //   <a target="_blank" href="https://beian.mps.gov.cn/#/query/webSearch">鄂公网安备42900402000709</a><span> |
+    message: '</span><a target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">鄂ICP备19029486号-5</a>'
+  },
 
   /**
    * @see https://theme-plume.vuejs.press/config/basic/#profile
    */
   profile: {
-    avatar: 'https://blog.3xj.club/a/Snipaste_2025-03-06_14-35-40.png',
+    avatar: 'https://gaohan.asia/a/Snipaste_2025-03-06_14-35-40.png',
     name: '云泽',
     description: '专注技术深耕与实战沉淀的开发者札记',
     // circle: true,
