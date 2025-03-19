@@ -123,9 +123,9 @@ export default defineUserConfig({
        * @see https://theme-plume.vuejs.press/config/plugins/search/#algolia-docsearch
        */
       docsearch: {
-        appId: 'P1T06COSTD',
-        apiKey: '1d4c82894744f7736e1a4fdbb0bd394d',
-        indexName: '3xj',
+        appId: 'H4L9CZRF8M',
+        apiKey: 'a61f16ffde48a3aa46b6a0cc3fcc32e3',
+        indexName: 'gaohan',
       },
 
       /* 文章字数统计、阅读时间，设置为 false 则禁用 */
