@@ -6,14 +6,21 @@ const demoNote = defineNoteConfig({
   sidebar: ['', 'foo', 'bar'],
 })
 
+const postgraduateNote = defineNoteConfig({
+  dir: 'postgraduate',
+  link: '/postgraduate',
+  sidebar: 'auto'
+})
+
+
 const makeMoneyNote = defineNoteConfig({
-  dir: 'makemoney',
-  link: '/makemoney',
+  dir: 'random',
+  link: '/random',
   sidebar: ['', '黄金交易'],
 })
 
 export const notes = defineNotesConfig({
   dir: 'notes',
   link: '/',
-  notes: [demoNote, makeMoneyNote],
+  notes: [postgraduateNote, demoNote, makeMoneyNote],
 })
