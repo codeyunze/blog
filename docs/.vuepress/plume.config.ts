@@ -31,8 +31,8 @@ export default defineThemeConfig({
   footer: {
     copyright: '',
     // message: 'Power by <a target="_blank" href="https://v2.vuepress.vuejs.org/">VuePress</a> & <a target="_blank" href="https://theme-plume.vuejs.press">vuepress-theme-plume</a>',
-    //   <a target="_blank" href="https://beian.mps.gov.cn/#/query/webSearch">鄂公网安备42900402000709</a><span> |
-    message: '</span><a target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">鄂ICP备19029486号-5</a>'
+    //
+    message: '<a target="_blank" href="https://beian.mps.gov.cn/#/query/webSearch">鄂公网安备42900402000843号</a><span> | </span><a target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">鄂ICP备19029486号-5</a>'
   },
 
   /**

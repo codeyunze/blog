@@ -16,14 +16,14 @@ export default defineUserConfig({
       'script',
       {},
       `
-            var _hmt = _hmt || [];
-            (function() {
-              var hm = document.createElement("script");
-              hm.src = "https://hm.baidu.com/hm.js?2fd99d976725726aa14c048b48dd2338";
-              var s = document.getElementsByTagName("script")[0]; 
-              s.parentNode.insertBefore(hm, s);
-            })();
-            `
+          var _hmt = _hmt || [];
+          (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?28df3f32fe0cdd8131d9fcce3586ba0a";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+          })();
+      `
     ]
   ],
 
@@ -123,9 +123,9 @@ export default defineUserConfig({
        * @see https://theme-plume.vuejs.press/config/plugins/search/#algolia-docsearch
        */
       docsearch: {
-        appId: 'P1T06COSTD',
-        apiKey: '1d4c82894744f7736e1a4fdbb0bd394d',
-        indexName: '3xj',
+        appId: 'H4L9CZRF8M',
+        apiKey: 'a61f16ffde48a3aa46b6a0cc3fcc32e3',
+        indexName: 'gaohan',
       },
 
       /* 文章字数统计、阅读时间，设置为 false 则禁用 */
