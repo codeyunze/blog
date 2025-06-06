@@ -1,4 +1,5 @@
 import { viteBundler } from '@vuepress/bundler-vite'
+import { markdownMathPlugin } from '@vuepress/plugin-markdown-math'
 import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
 
@@ -179,9 +180,9 @@ export default defineUserConfig({
        * Markdown 数学公式
        * @see https://theme-plume.vuejs.press/config/plugins/markdown-math/
        */
-      // markdownMath: {
-      //   type: 'katex',
-      // },
+      markdownMath: {
+        // type: 'mathjax-full',
+      },
 
       /**
        * 水印
