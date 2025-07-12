@@ -6,7 +6,7 @@ import { notes } from './notes'
  * @see https://theme-plume.vuejs.press/config/basic/
  */
 export default defineThemeConfig({
-  logo: 'https://gaohan.asia/a/plume.png',
+  logo: 'http://gaohan.asia/a/plume.png',
 
   appearance: true,  // 配置 深色模式
 
@@ -32,14 +32,14 @@ export default defineThemeConfig({
     copyright: '',
     // message: 'Power by <a target="_blank" href="https://v2.vuepress.vuejs.org/">VuePress</a> & <a target="_blank" href="https://theme-plume.vuejs.press">vuepress-theme-plume</a>',
     //
-    message: '<a target="_blank" href="https://beian.mps.gov.cn/#/query/webSearch">鄂公网安备42900402000843号</a><span> | </span><a target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">鄂ICP备19029486号-5</a>'
+    message: '<a target="_blank" href="https://beian.mps.gov.cn/#/query/webSearch">鄂公网安备42900402000843号</a></br><a target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">鄂ICP备19029486号-5</a>'
   },
 
   /**
    * @see https://theme-plume.vuejs.press/config/basic/#profile
    */
   profile: {
-    avatar: 'https://gaohan.asia/a/Snipaste_2025-03-06_14-35-40.png',
+    avatar: 'http://gaohan.asia/a/Snipaste_2025-03-06_14-35-40.png',
     name: '云泽',
     description: '专注技术深耕与实战沉淀的开发者札记',
     // circle: true,

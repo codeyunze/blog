@@ -6,3 +6,6 @@ src/.vuepress/dist/
 /pnpm-lock.yaml
 .DS_Store
 .idea
+/docs/.vuepress/.cache/markdown/rendered/18efd3e5
+/docs/.vuepress/.temp/pages/article/xnlqv6di/index.html.js
+/docs/.vuepress/.temp/pages/article/xnlqv6di/index.html.vue

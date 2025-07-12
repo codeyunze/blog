@@ -1,4 +1,5 @@
 import { viteBundler } from '@vuepress/bundler-vite'
+import { markdownMathPlugin } from '@vuepress/plugin-markdown-math'
 import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
 
@@ -10,7 +11,7 @@ export default defineUserConfig({
 
   head: [
     // 配置站点图标
-    ['link', { rel: 'icon', type: 'images/png', href: 'https://gaohan.asia/plume.png' }],
+    ['link', { rel: 'icon', type: 'images/png', href: 'http://gaohan.asia/plume.png' }],
     ['meta', {name: 'msvalidate.01', content: '0508C8F9658C27122ABCB4C8941A68F7'}],
     [
       'script',
@@ -32,7 +33,7 @@ export default defineUserConfig({
 
   theme: plumeTheme({
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
-    hostname: 'https://www.gaohan.asia',
+    hostname: 'http://www.gaohan.asia',
 
     /* 文档仓库配置，用于 editLink */
     // docsRepo: '',
@@ -179,9 +180,9 @@ export default defineUserConfig({
        * Markdown 数学公式
        * @see https://theme-plume.vuejs.press/config/plugins/markdown-math/
        */
-      // markdownMath: {
-      //   type: 'katex',
-      // },
+      markdownMath: {
+        // type: 'mathjax-full',
+      },
 
       /**
        * 水印
