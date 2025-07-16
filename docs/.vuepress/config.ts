@@ -11,8 +11,9 @@ export default defineUserConfig({
 
   head: [
     // 配置站点图标
-    ['link', { rel: 'icon', type: 'images/png', href: 'http://gaohan.asia/plume.png' }],
+    ['link', { rel: 'icon', type: 'images/png', href: 'https://blog.gaohan.asia/plume.png' }],
     ['meta', {name: 'msvalidate.01', content: '0508C8F9658C27122ABCB4C8941A68F7'}],
+    ['meta', {name: 'algolia-site-verification', content: '8FA462C6B921A60E'}],
     [
       'script',
       {},
@@ -20,7 +21,7 @@ export default defineUserConfig({
           var _hmt = _hmt || [];
           (function() {
             var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?28df3f32fe0cdd8131d9fcce3586ba0a";
+            hm.src = "https://hm.baidu.com/hm.js?6271af65cdb8a84803fa4410d26c0764";
             var s = document.getElementsByTagName("script")[0]; 
             s.parentNode.insertBefore(hm, s);
           })();
@@ -33,7 +34,7 @@ export default defineUserConfig({
 
   theme: plumeTheme({
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
-    hostname: 'http://www.gaohan.asia',
+    hostname: 'https://blog.gaohan.asia',
 
     /* 文档仓库配置，用于 editLink */
     // docsRepo: '',
@@ -124,9 +125,9 @@ export default defineUserConfig({
        * @see https://theme-plume.vuejs.press/config/plugins/search/#algolia-docsearch
        */
       docsearch: {
-        appId: 'H4L9CZRF8M',
-        apiKey: 'a61f16ffde48a3aa46b6a0cc3fcc32e3',
-        indexName: 'gaohan',
+        appId: '1NIN4Y2MTP',
+        apiKey: 'f186bb9e6b981273456b9afcde2924aa',
+        indexName: 'yunzeblog',
       },
 
       /* 文章字数统计、阅读时间，设置为 false 则禁用 */
