@@ -19,7 +19,7 @@ list:
     name: 云泽的商城
     link: https://3xj.club/#/login
     avatar: https://blog.gaohan.asia/a/Snipaste_2025-03-07_14-58-46.png
-    desc: 基于SpringCloud、Mybatis、Sa-Token、Nacos、Seata、Redis、Elasticsearch、Rabbitmq、腾讯云COS对象存储开发的商城系统。
+    desc: 基于SpringCloud、Mybatis、Sa-Token、Nacos、Seata、2.Redis、Elasticsearch、Rabbitmq、腾讯云COS对象存储开发的商城系统。
   -
     name: 系统监控
     link: http://8.134.220.153:3000/d/MQWgroiiz/mysql-overview?orgId=1&refresh=5s
