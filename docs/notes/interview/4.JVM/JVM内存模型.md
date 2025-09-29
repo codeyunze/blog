@@ -1,3 +1,8 @@
+---
+title: JVM内存模型
+createTime: 2025/09/24 21:02:03
+permalink: /interview/zbioapbt/
+---
 堆里存放对象new出来的值， 方法区里存的是new出来的值在堆里的地址；
 
 方法区：存放常量、静态变量、类信息；
