@@ -6,7 +6,7 @@ import { plumeTheme } from 'vuepress-theme-plume'
 export default defineUserConfig({
   base: '/',
   lang: 'zh-CN',
-  title: '云泽的札记',
+  title: '云岱筑码',
   description: '专注技术深耕与实战沉淀的开发者札记',
 
   head: [
