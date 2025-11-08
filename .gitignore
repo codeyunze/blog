@@ -7,6 +7,7 @@ src/.vuepress/dist/
 .DS_Store
 .idea
 /docs/.vuepress/.temp/*
+/docs/.vuepress/dist/*
 /docs/.vuepress/.cache/markdown/rendered/18efd3e5
 /docs/.vuepress/.temp/pages/article/xnlqv6di/index.html.js
 /docs/.vuepress/.temp/pages/article/xnlqv6di/index.html.vue
