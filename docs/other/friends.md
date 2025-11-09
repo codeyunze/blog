@@ -5,21 +5,21 @@ createTime: 2025/03/07 14:22:03
 draft: true
 list:
   -
-    name: 云泽的GitHub
+    name: 云岱的GitHub
     link: https://github.com/codeyunze
     avatar: https://blog.gaohan.asia/a/Snipaste_2025-03-06_14-35-40.png
     location: 广州，中国
     desc: 即使举棋不定，徘徊如雾，纵会错失，纵会退却，但灵魂深处总有一盏不灭的灯，照亮犹豫者终将迈出的那一步。
   -
-    name: 云泽的公众号
+    name: 云岱的公众号
     link: https://mp.weixin.qq.com/s/nmSlyEo5lK_bo9Ovh7p4tQ
     avatar: https://blog.gaohan.asia/a/Snipaste_2025-03-07_14-53-09.png
     desc: 这里没有玄学黑话，只有：工作中遇到的技术难题解法、亲手调试的代码避坑笔记、新框架落地的经验复盘。程序员写程序员的生存指南，用最直白的语言啃最硬的骨头。
   -
-    name: 云泽的商城
-    link: https://3xj.club/#/login
+    name: 云岱的商城
+    link: https://github.com/codeyunze/yz-mall
     avatar: https://blog.gaohan.asia/a/Snipaste_2025-03-07_14-58-46.png
-    desc: 基于SpringCloud、Mybatis、Sa-Token、Nacos、Seata、2.Redis、Elasticsearch、Rabbitmq、腾讯云COS对象存储开发的商城系统。
+    desc: 基于SpringCloud、Mybatis、Sa-Token、Nacos、Seata、Redis、Elasticsearch、Rabbitmq、腾讯云COS对象存储开发的商城系统。
   -
     name: 系统监控
     link: http://8.134.220.153:3000/d/MQWgroiiz/mysql-overview?orgId=1&refresh=5s
