@@ -7,7 +7,7 @@ config:
     full: true
     background: tint-plate
     hero:
-      name: 云岱筑码
+      name: 云泽汇码
       tagline: 
       text: 专注技术深耕与实战沉淀的开发者手记，记录成长的每一个足迹。
       actions:
