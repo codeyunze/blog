@@ -7,7 +7,7 @@ export default defineUserConfig({
   base: '/',
   lang: 'zh-CN',
   title: '云泽汇码',
-  description: '专注技术深耕与实战沉淀的开发者札记',
+  description: '专注技术深耕与实战沉淀的开发者笔记',
 
   head: [
     // 配置站点图标

@@ -9,7 +9,7 @@ config:
     hero:
       name: 云泽汇码
       tagline: 
-      text: 专注技术深耕与实战沉淀的开发者手记，记录成长的每一个足迹。
+      text: 专注技术深耕与实战沉淀的开发者笔记，记录成长的每一个足迹。
       actions:
         -
           theme: brand
