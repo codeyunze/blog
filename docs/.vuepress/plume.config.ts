@@ -41,8 +41,8 @@ export default defineThemeConfig({
    */
   profile: {
     avatar: 'https://blog.gaohan.asia/a/Snipaste_2025-03-06_14-35-40.png',
-    name: '云岱',
-    description: '专注技术深耕与实战沉淀的开发者札记',
+    name: '云泽',
+    description: '专注技术深耕与实战沉淀的开发者笔记',
     // circle: true,
     // location: '',
     // organization: '',

@@ -10,7 +10,7 @@ export const navbar = defineNavbarConfig([
     text: '笔记',
     items: [
       { text: '考研', link: '/notes/postgraduate/README.md' }
-      , { text: '赚钱', link: '/notes/random/README.md' }
+      // , { text: '赚钱', link: '/notes/random/README.md' }
       , { text: '友情链接', link: '/other/friends.md' }
     ]
   },
