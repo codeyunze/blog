@@ -1,13 +1,10 @@
 name: docs
 
 on:
-  # 每当 push 到 main 分支时触发部署
   push:
     branches: [main]
-  # 手动触发部署
   workflow_dispatch:
 
-# 授予 GITHUB_TOKEN 推送权限，用于部署到 gh-pages 分支
 permissions:
   contents: write
 
@@ -16,40 +13,32 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-        with:
-          # “最近更新时间” 等 git 日志相关信息，需要拉取全部提交记录
-          fetch-depth: 0
+      # 使用 git clone 替代 actions/checkout（适配仅允许组织内 actions 的策略）
+      - name: 获取代码
+        run: |
+          git clone --branch ${{ github.ref_name }} https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git .
 
       - name: 设置 pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
+        run: |
+          corepack enable
+          corepack prepare pnpm@9 --activate
 
-      - name: 设置 Node.js
-        uses: actions/setup-node@v4
-        with:
-          # 选择要使用的 node 版本
-          node-version: 22
-          # 缓存 pnpm 依赖
-          cache: pnpm
-
+      # ubuntu-latest 自带 Node.js 20，如需 Node 22 可取消下行注释
+      # - run: npx -y n 22 && npm cache clean -f
       - name: 安装依赖
         run: pnpm install --frozen-lockfile
 
-      # 运行构建脚本
       - name: 构建 VuePress 站点
         run: pnpm docs:build
 
-      # 查看 workflow 的文档来获取更多信息
-      # @see https://github.com/crazy-max/ghaction-github-pages
+      # 使用 git 命令替代 crazy-max/ghaction-github-pages
       - name: 部署到 GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          # 部署到 gh-pages 分支
-          target_branch: gh-pages
-          # 部署目录为 VuePress 的默认输出目录
-          build_dir: docs/.vuepress/dist
-        env:
-          # 使用内置 GITHUB_TOKEN，无需单独配置 PAT
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd docs/.vuepress/dist
+          git init
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Deploy from GitHub Actions"
+          git branch -M main
+          git push -f https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git main:gh-pages
