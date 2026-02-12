@@ -6,13 +6,13 @@ import { notes } from './notes'
  * @see https://theme-plume.vuejs.press/config/basic/
  */
 export default defineThemeConfig({
-  logo: 'https://blog.gaohan.asia/a/plume.png',
+  logo: '/images/plume.png',
 
   appearance: true,  // 配置 深色模式
 
   social: [
     { icon: 'github', link: 'https://github.com/codeyunze' },
-    { icon: 'qq', link: 'https://blog.gaohan.asia/a/%E6%89%AB%E7%A0%81_%E6%90%9C%E7%B4%A2%E8%81%94%E5%90%88%E4%BC%A0%E6%92%AD%E6%A0%B7%E5%BC%8F-%E7%99%BD%E8%89%B2%E7%89%88.png'}
+    { icon: 'qq', link: '/images/%E6%89%AB%E7%A0%81_%E6%90%9C%E7%B4%A2%E8%81%94%E5%90%88%E4%BC%A0%E6%92%AD%E6%A0%B7%E5%BC%8F-%E7%99%BD%E8%89%B2%E7%89%88.png'}
   ],
   // navbarSocialInclude: ['github'], // 允许显示在导航栏的 social 社交链接
   // aside: true, // 页内侧边栏， 默认显示在右侧
@@ -40,7 +40,7 @@ export default defineThemeConfig({
    * @see https://theme-plume.vuejs.press/config/basic/#profile
    */
   profile: {
-    avatar: 'https://blog.gaohan.asia/a/Snipaste_2025-03-06_14-35-40.png',
+    avatar: '/images/Snipaste_2025-03-06_14-35-40.png',
     name: '云泽',
     description: '专注技术深耕与实战沉淀的开发者笔记',
     // circle: true,
