@@ -13,8 +13,8 @@ const postgraduateNote = defineNoteConfig({
 })
 
 const interviewNote = defineNoteConfig({
-  dir: 'interview',
-  link: '/interview',
+  dir: 'classification',
+  link: '/classification',
   sidebar: 'auto'
 })
 
