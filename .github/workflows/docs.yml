@@ -27,6 +27,9 @@ jobs:
       # - run: npx -y n 22 && npm cache clean -f
       - name: 安装依赖
         run: pnpm install --frozen-lockfile
+        env:
+          # @vuepress-plume/* 等包在 npm 官方源 404，使用 npmmirror 镜像
+          npm_config_registry: https://registry.npmmirror.com
 
       - name: 构建 VuePress 站点
         run: pnpm docs:build
