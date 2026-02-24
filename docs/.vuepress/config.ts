@@ -1,5 +1,5 @@
 import { viteBundler } from '@vuepress/bundler-vite'
-import { markdownMathPlugin } from '@vuepress/plugin-markdown-math'
+// import { markdownMathPlugin } from '@vuepress/plugin-markdown-math'
 import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
 
@@ -198,10 +198,10 @@ export default defineUserConfig({
       comment: {
         provider: 'Giscus', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
         comment: true,
-        repo: 'codeyunze/blog',
+        repo: 'codeyunze/codeyunze.github.io',
         repoId: 'R_kgDOMo44_A',
         category: 'General',
-        categoryId: 'DIC_kwDOMo44_M4CiKOl',
+        categoryId: 'DIC_kwDOMo44_M4CiKOk',
         mapping: 'title',
         reactionsEnabled: true,
         inputPosition: 'top',
