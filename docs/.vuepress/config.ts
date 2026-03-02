@@ -117,18 +117,18 @@ export default defineUserConfig({
       },
 
       /* 本地搜索, 默认启用 */
-      search: false,
+      // search: true,
 
       /**
        * Algolia DocSearch
        * 启用此搜索需要将 本地搜索 search 设置为 false
        * @see https://theme-plume.vuejs.press/config/plugins/search/#algolia-docsearch
        */
-      docsearch: {
+      /*docsearch: {
         appId: '1NIN4Y2MTP',
         apiKey: 'f186bb9e6b981273456b9afcde2924aa',
         indexName: 'yunzeblog',
-      },
+      },*/
 
       /* 文章字数统计、阅读时间，设置为 false 则禁用 */
       // readingTime: true,
