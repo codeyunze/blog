@@ -12,3 +12,4 @@ src/.vuepress/dist/
 /.stignore
 /docs/.vuepress/dist/
 /docs/.vuepress/.cache/
+.history
