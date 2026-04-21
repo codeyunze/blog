@@ -6,6 +6,8 @@ createTime: 2025/02/16 15:02:54
 permalink: /article/aafpfq15/
 ---
 
+上面加 `article: false` 就表示该文档还未完成，暂不展示。
+
 ## 标题 2
 
 ### 标题 3
